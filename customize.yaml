@@ -1,0 +1,41 @@
+light.tkb_home_unknown_type_0003_id_0008_level:
+  friendly_name: Woonkamer linksvoor
+  icon: mdi:floor-lamp
+light.tkb_home_unknown_type_0003_id_0008_level_2:
+  friendly_name: Overkapping
+  icon: mdi:ceiling-light
+light.tkb_home_unknown_type_0003_id_0008_level_3:
+  friendly_name: Woonkamer rechtsvoor
+  icon: mdi:lamp
+switch.fibaro_system_fgwpe_f_wall_plug_gen5_switch:
+  friendly_name: Wall Plug Switch - Droger
+switch.fibaro_system_fgwpe_f_wall_plug_gen5_switch_2:
+  friendly_name: Wall Plug Switch - Wasmachine
+automation.copy_backup_folder_to_dropbox_at_22_00:
+  icon: mdi:content-copy
+scene.dimmed_lights:
+  icon: mdi:car-light-dimmed
+scene.less_dimmed_lights:
+  icon: mdi:car-light-fog
+scene.half_full_lights:
+  icon: mdi:car-light-fog
+scene.full_lights:
+  icon: mdi:car-light-high
+light.woonkamer_linksvoor_level:
+  icon: mdi:floor-lamp
+light.woonkamer_rechtsvoor_level:
+  icon: mdi:lamp
+light.tuin_overkapping_level:
+  icon: mdi:ceiling-light
+sensor.asuswrt_download:
+  icon: mdi:download-network-outline
+sensor.asuswrt_download_speed:
+  icon: mdi:speedometer
+sensor.asuswrt_upload:
+  icon: mdi:upload-network-outline
+sensor.asuswrt_upload_speed:
+  icon: mdi:speedometer
+switch.bijkeuken_wasmachine_switch:
+  icon: mdi:power-plug
+switch.bijkeuken_droger_switch:
+  icon: mdi:power-plug

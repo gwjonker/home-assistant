@@ -1,0 +1,12 @@
+---
+hello_world:
+  module: hello
+  class: HelloWorld
+
+deconz_helper:
+  module: deconz_helper
+  class: DeconzHelper
+
+aqara_cube:
+  module: aqara_cube
+  class: CubeControl

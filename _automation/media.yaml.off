@@ -1,0 +1,52 @@
+# Dim lichten als TV aangezet (via Chromecast)
+- alias: "Dim lichten als TV aangezet (via Chromecast)"
+  trigger:
+    - platform: state
+      entity_id: media_player.chromecast_jonkertjes
+      from: "unavailable"
+      to: "off"
+  condition:
+    - condition: state
+      entity_id: light.woonkamer_linksvoor_level
+      state: "on"
+  action:
+    - service: scene.turn_on
+      entity_id: scene.film
+    - service: persistent_notification.create
+      data_template:
+        message: "Lichten gedimd omdat TV aangezet"
+        title: "TV aangezet"
+    # - service: script.sonos_say
+    #   data:
+    #     sonos_entity: media_player.woonkamer
+    #     volume: 0.9
+    #     message: "Have a nice time with your television."
+    #     delay: "00:00:05"
+
+# Doe licht uit als 's avonds TV uitgezet (via Chromecast)
+- alias: "Doe licht uit als 's avonds TV uitgezet (via Chromecast)"
+  trigger:
+    - platform: state
+      entity_id: media_player.chromecast_jonkertjes
+      from: "off"
+      to: "unavailable"
+  condition:
+    - condition: state
+      entity_id: light.woonkamer_linksvoor_level
+      state: "on"
+    - condition: time
+      after: "23:15:00"
+      before: "06:00:00"
+  action:
+    - service: homeassistant.turn_off
+      entity_id: group.all_lights
+    - service: persistent_notification.create
+      data_template:
+        message: "Lichten uit 's avonds TV uitgezet"
+        title: "TV aangezet"
+    # - service: script.sonos_say
+    #   data:
+    #     sonos_entity: media_player.woonkamer
+    #     volume: 0.5
+    #     message: "Good night and sleep well"
+    #     delay: "00:00:03"

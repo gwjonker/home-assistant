@@ -1,0 +1,30 @@
+- alias: High download speed for 1 minute
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.asuswrt_download_speed
+    above: 30
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 0
+  action:
+    - service: persistent_notification.create
+      data_template:
+        title: Download speed
+        message: Download speed for 1 min. Current = {{ states.sensor.asuswrt_download_speed.state }} Mbit/s.
+
+- alias: High upload speed for 1 minute
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.asuswrt_upload_speed
+    above: 30
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 0
+  action:
+    - service: persistent_notification.create
+      data_template:
+        title: Upload speed
+        message: "{{ now().strftime('%Y-%m-%d %H:%M:%S') }} -
+          Upload speed for 1 min. Current = {{ states.sensor.asuswrt_upload_speed.state }} Mbit/s."

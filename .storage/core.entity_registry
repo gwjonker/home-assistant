@@ -1,0 +1,818 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "person.gerwin_jonker",
+                "name": null,
+                "platform": "person",
+                "unique_id": "bcaa86bd98fd4d7196baee536fea99f0"
+            },
+            {
+                "config_entry_id": "69d16099abd441fda11c8aeac08e04b0",
+                "device_id": "711a11e6951546858684bf9e935b2d6b",
+                "disabled_by": null,
+                "entity_id": "media_player.chromecast_jonkertjes",
+                "name": "Chromecast Jonkertjes",
+                "platform": "cast",
+                "unique_id": "c213e2bc-5f88-f736-7744-53667b259b2e"
+            },
+            {
+                "config_entry_id": "6009d6a056494ec1842d949e309d04fc",
+                "device_id": "56075bac40df4a1cbdf7a7e341d53c35",
+                "disabled_by": null,
+                "entity_id": "media_player.play_1",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_5CAAFD25A11C01400"
+            },
+            {
+                "config_entry_id": "6009d6a056494ec1842d949e309d04fc",
+                "device_id": "c5105f2ab7104b328c543ae921937dbc",
+                "disabled_by": null,
+                "entity_id": "media_player.woonkamer",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_5CAAFD0888F601400"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "cc32bf8257ac4cad980a8a4b071ede2c",
+                "disabled_by": null,
+                "entity_id": "zwave.aeon_labs_zw090_z_stick_gen5_eu",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-1"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "17995a0c313f4fd5a73e711bf4796f70",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305281"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "17995a0c313f4fd5a73e711bf4796f70",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305297"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "17995a0c313f4fd5a73e711bf4796f70",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_exporting",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594093273600"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "17995a0c313f4fd5a73e711bf4796f70",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305313"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "17995a0c313f4fd5a73e711bf4796f70",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305457"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "ce2ca873489f4f299523cf92fdd56e22",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_alarm_type_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082497"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "ce2ca873489f4f299523cf92fdd56e22",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_alarm_level_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082513"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "ce2ca873489f4f299523cf92fdd56e22",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110050434"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "ce2ca873489f4f299523cf92fdd56e22",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_exporting_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110050816"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "ce2ca873489f4f299523cf92fdd56e22",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_sourcenodeid_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082529"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "ce2ca873489f4f299523cf92fdd56e22",
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_management_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082673"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "17995a0c313f4fd5a73e711bf4796f70",
+                "disabled_by": null,
+                "entity_id": "zwave.fibaro_system_fgwpe_f_wall_plug_gen5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-3"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "ce2ca873489f4f299523cf92fdd56e22",
+                "disabled_by": null,
+                "entity_id": "zwave.fibaro_system_fgwpe_f_wall_plug_gen5_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-4"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "1841aba8f1c84d0f80b6aa3990c84cb5",
+                "disabled_by": null,
+                "entity_id": "zwave.tkb_home_unknown_type_0003_id_0008",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-5"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "b4739c514a1d4a3898f041d4a5fa7294",
+                "disabled_by": null,
+                "entity_id": "zwave.tkb_home_unknown_type_0003_id_0008_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-6"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "bb5c62df9e7b47fbbdd072d0c3186e3e",
+                "disabled_by": null,
+                "entity_id": "zwave.tkb_home_unknown_type_0003_id_0008_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-7"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "17995a0c313f4fd5a73e711bf4796f70",
+                "disabled_by": null,
+                "entity_id": "sensor.bijkeuken_droger_power",
+                "name": "Droger - Power ",
+                "platform": "zwave",
+                "unique_id": "3-72057594093256770"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "17995a0c313f4fd5a73e711bf4796f70",
+                "disabled_by": null,
+                "entity_id": "sensor.bijkeuken_droger_energy",
+                "name": "Droger - Energie",
+                "platform": "zwave",
+                "unique_id": "3-72057594093273090"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "ce2ca873489f4f299523cf92fdd56e22",
+                "disabled_by": null,
+                "entity_id": "sensor.bijkeuken_wasmachine_energy",
+                "name": "Wasmachine - Energie",
+                "platform": "zwave",
+                "unique_id": "4-72057594110050306"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "17995a0c313f4fd5a73e711bf4796f70",
+                "disabled_by": null,
+                "entity_id": "switch.bijkeuken_droger_switch",
+                "name": "Droger - Switch",
+                "platform": "zwave",
+                "unique_id": "3-72057594093060096"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "ce2ca873489f4f299523cf92fdd56e22",
+                "disabled_by": null,
+                "entity_id": "switch.bijkeuken_wasmachine_switch",
+                "name": "Wasmachine - Switch",
+                "platform": "zwave",
+                "unique_id": "4-72057594109837312"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "1841aba8f1c84d0f80b6aa3990c84cb5",
+                "disabled_by": null,
+                "entity_id": "light.woonkamer_linksvoor_level",
+                "name": "Woonkamer linksvoor dimmer",
+                "platform": "zwave",
+                "unique_id": "5-72057594126630913"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "bb5c62df9e7b47fbbdd072d0c3186e3e",
+                "disabled_by": null,
+                "entity_id": "light.woonkamer_rechtsvoor_level",
+                "name": "Woonkamer rechtsvoor dimmer",
+                "platform": "zwave",
+                "unique_id": "7-72057594160185345"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "b4739c514a1d4a3898f041d4a5fa7294",
+                "disabled_by": null,
+                "entity_id": "light.tuin_overkapping_level",
+                "name": "Overkapping dimmer",
+                "platform": "zwave",
+                "unique_id": "6-72057594143408129"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "17995a0c313f4fd5a73e711bf4796f70",
+                "disabled_by": null,
+                "entity_id": "sensor.bijkeuken_droger_power_2",
+                "name": "Droger - Power - 2",
+                "platform": "zwave",
+                "unique_id": "3-72057594093273218"
+            },
+            {
+                "config_entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "device_id": "ce2ca873489f4f299523cf92fdd56e22",
+                "disabled_by": null,
+                "entity_id": "sensor.bijkeuken_wasmachine_power",
+                "name": "Wasmachine - Power",
+                "platform": "zwave",
+                "unique_id": "4-72057594110033986"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_detailed_condition",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000conditiondetailed"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_rainchance_2d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000rainchance_2d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_full_condition",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000conditionexact"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_rainchance_3d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000rainchance_3d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_symbol",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000symbol"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_rainchance_4d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000rainchance_4d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_humidity",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000humidity"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_rainchance_5d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000rainchance_5d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_temperature",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000temperature"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_sunchance_1d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000sunchance_1d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_ground_temperature",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000groundtemperature"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_sunchance_2d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000sunchance_2d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_wind_speed",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000windspeed"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_sunchance_3d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000sunchance_3d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_wind_force",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000windforce"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_sunchance_4d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000sunchance_4d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_wind_direction",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000winddirection"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_sunchance_5d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000sunchance_5d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_wind_direction_azimuth",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000windazimuth"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_rain_1d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000rain_1d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_pressure",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000pressure"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_rain_2d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000rain_2d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_visibility",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000visibility"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_rain_3d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000rain_3d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_wind_gust",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000windgust"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_rain_4d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000rain_4d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_precipitation",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000precipitation"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_rain_5d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000rain_5d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_irradiance",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000irradiance"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_precipitation_forecast_average",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000precipitation_forecast_average"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_precipitation_forecast_total",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000precipitation_forecast_total"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_symbol_1d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000symbol_1d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_symbol_2d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000symbol_2d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_symbol_3d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000symbol_3d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_symbol_4d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000symbol_4d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_symbol_5d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000symbol_5d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_temperature_1d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000temperature_1d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_temperature_2d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000temperature_2d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_temperature_3d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000temperature_3d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_temperature_4d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000temperature_4d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_stationname",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000stationname"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_temperature_5d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000temperature_5d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_condition",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000condition"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_rainchance_1d",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000rainchance_1d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.heino_condition_code",
+                "name": null,
+                "platform": "buienradar",
+                "unique_id": "52.4300006.270000conditioncode"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "fc7bff8c5a114a92b164970900a0b087",
+                "disabled_by": null,
+                "entity_id": "sensor.daylight",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:21:2e:ff:ff:04:89:7b-01"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "5ee489c2f9dd4bf582ceab1d1f4c29ab",
+                "disabled_by": null,
+                "entity_id": "sensor.switch_2_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:02:9b:f7:09-02-0012"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "5ee489c2f9dd4bf582ceab1d1f4c29ab",
+                "disabled_by": null,
+                "entity_id": "sensor.switch_3_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:02:9b:f7:09-03-000c"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "460e6981ec7d4bc3b785a0516a1cb522",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.openclose_4",
+                "name": "Voordeur",
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:21:66:1e-01-0006"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "603958cc8a034692a3c21ddd0b372e0b",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.openclose_5",
+                "name": "Achterdeur",
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:21:97:97-01-0006"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "b43c4256b54342c2ae34a26083cbe6f8",
+                "disabled_by": null,
+                "entity_id": "sensor.lightlevel_6",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:15:f0:c9-01-0400"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "b43c4256b54342c2ae34a26083cbe6f8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.presence_7",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:15:f0:c9-01-0406"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "d7772032c19e477abbf696bc9e786ab9",
+                "disabled_by": null,
+                "entity_id": "sensor.lightlevel_8",
+                "name": "Licht woonkamer",
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:02:11:3d-01-0400"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "d7772032c19e477abbf696bc9e786ab9",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.presence_9",
+                "name": "",
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:02:11:3d-01-0406"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "1de75eed4a7b47f5812ca586513f5ff6",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.presence_10",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:1c:8b:7e-01-0406"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "1de75eed4a7b47f5812ca586513f5ff6",
+                "disabled_by": null,
+                "entity_id": "sensor.lightlevel_11",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:1c:8b:7e-01-0400"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "3a602e50ad5b45c6bc55bfed534aa570",
+                "disabled_by": null,
+                "entity_id": "sensor.lightlevel_12",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:2b:d6:42-01-0400"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "3a602e50ad5b45c6bc55bfed534aa570",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.presence_13",
+                "name": "",
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:2b:d6:42-01-0406"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "e8c196daf42144c7b6c70fe8eeba28bb",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.openclose_14",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:17:3f:c3-01-0006"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

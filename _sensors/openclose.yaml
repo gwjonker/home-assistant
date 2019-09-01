@@ -1,0 +1,31 @@
+- platform: template
+  sensors:
+    temp_poort:
+      value_template: "{{ states.binary_sensor.openclose_14.attributes.temperature|int }}"
+      friendly_name: "Temperatuur poort"
+      unit_of_measurement: "°C"
+
+    temp_voordeur:
+      value_template: "{{ states.binary_sensor.openclose_4.attributes.temperature|int }}"
+      friendly_name: "Temperatuur voordeur"
+      unit_of_measurement: "°C"
+
+    temp_achterdeur:
+      value_template: "{{ states.binary_sensor.openclose_5.attributes.temperature|int }}"
+      friendly_name: "Temperatuur achterdeur"
+      unit_of_measurement: "°C"
+
+    battery_poort:
+      value_template: "{{ states.binary_sensor.openclose_14.attributes.battery_level|int }}"
+      friendly_name: "Batterij poort"
+      unit_of_measurement: "%"
+
+    battery_voordeur:
+      value_template: "{{ states.binary_sensor.openclose_4.attributes.battery_level|int }}"
+      friendly_name: "Batterij voordeur"
+      unit_of_measurement: "%"
+
+    battery_achterdeur:
+      value_template: "{{ states.binary_sensor.openclose_5.attributes.battery_level|int }}"
+      friendly_name: "Batterij achterdeur"
+      unit_of_measurement: "%"

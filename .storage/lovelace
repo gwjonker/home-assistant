@@ -1,0 +1,347 @@
+{
+    "data": {
+        "config": {
+            "icon": "mdi:flower",
+            "title": "Home",
+            "views": [
+                {
+                    "badges": [
+                        "sensor.temp_woonkamer",
+                        "sensor.temp_overloop",
+                        "sensor.temp_zolder",
+                        "sensor.temp_overkapping"
+                    ],
+                    "cards": [
+                        {
+                            "columns": 3,
+                            "entities": [
+                                {
+                                    "entity": "light.woonkamer_linksvoor_level"
+                                },
+                                {
+                                    "entity": "light.woonkamer_rechtsvoor_level"
+                                },
+                                {
+                                    "entity": "light.tuin_overkapping_level"
+                                }
+                            ],
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "scene.film"
+                                },
+                                {
+                                    "entity": "scene.conversatie"
+                                },
+                                {
+                                    "entity": "scene.verjaardag"
+                                },
+                                {
+                                    "entity": "scene.maximaal"
+                                },
+                                {
+                                    "entity": "group.all_lights"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Kies een scene",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "light.tuin_overkapping_level",
+                            "name": "Overkapping",
+                            "type": "light"
+                        },
+                        {
+                            "entity": "light.woonkamer_linksvoor_level",
+                            "name": "Woonkamer linksvoor",
+                            "type": "light"
+                        },
+                        {
+                            "entity": "light.woonkamer_rechtsvoor_level",
+                            "name": "Woonkamer rechtsvoor",
+                            "type": "light"
+                        },
+                        {
+                            "entity": "sensor.lightlevel_12",
+                            "graph": "line",
+                            "name": "Licht overkapping",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.lightlevel_6",
+                            "graph": "line",
+                            "name": "Licht overloop",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.lightlevel_8",
+                            "graph": "line",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.lightlevel_11",
+                            "graph": "line",
+                            "name": "Licht zolder",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.mi_magic_cube_event",
+                            "name": "Last Magic Cube event",
+                            "type": "sensor"
+                        }
+                    ],
+                    "icon": "mdi:lightbulb-on-outline",
+                    "panel": false,
+                    "title": "Licht"
+                },
+                {
+                    "badges": [
+                        "device_tracker.gerwin",
+                        "device_tracker.gerrie",
+                        "device_tracker.hanneke",
+                        "device_tracker.hinke",
+                        "device_tracker.jonathan",
+                        "device_tracker.naomi"
+                    ],
+                    "cards": [
+                        {
+                            "columns": 3,
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.openclose_4"
+                                },
+                                {
+                                    "entity": "binary_sensor.openclose_5"
+                                },
+                                {
+                                    "entity": "binary_sensor.openclose_14"
+                                },
+                                {
+                                    "entity": "binary_sensor.presence_9"
+                                },
+                                {
+                                    "entity": "binary_sensor.presence_13"
+                                },
+                                {
+                                    "entity": "sensor.beweging_carport"
+                                },
+                                {
+                                    "entity": "binary_sensor.presence_7"
+                                },
+                                {
+                                    "entity": "binary_sensor.presence_10"
+                                }
+                            ],
+                            "type": "glance"
+                        },
+                        {
+                            "camera_view": "live",
+                            "entity": "camera.carport",
+                            "tap_action": [
+                                {
+                                    "action": "call-service",
+                                    "service": "camera.snapshot",
+                                    "service_data": {
+                                        "entity_id": "camera.carport",
+                                        "filename": "/share/cams/carport-{{ now().strftime(\"%Y-%m-%d-%H%M%S\") }}.jpg"
+                                    }
+                                }
+                            ],
+                            "type": "picture-entity"
+                        }
+                    ],
+                    "icon": "mdi:security",
+                    "title": "Safety"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "weather.dark_sky",
+                            "name": "Dark Sky",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entity": "sensor.heino_temperature",
+                            "graph": "line",
+                            "hours_to_show": 48,
+                            "name": "Temperatuur buiten (2d)",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.temp_woonkamer",
+                            "graph": "line",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.temp_overloop",
+                            "graph": "line",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.temp_zolder",
+                            "graph": "line",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.temp_voordeur",
+                            "graph": "line",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.temp_overkapping",
+                            "graph": "line",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.temp_achterdeur",
+                            "graph": "line",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.temp_poort",
+                            "graph": "line",
+                            "type": "sensor"
+                        }
+                    ],
+                    "icon": "mdi:weather-sunny",
+                    "title": "Weer"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "media_player.woonkamer",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.chromecast_jonkertjes",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.play_1",
+                            "type": "media-control"
+                        }
+                    ],
+                    "icon": "mdi:animation-play",
+                    "title": "Media"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "sensor.bijkeuken_droger_energy",
+                                "sensor.bijkeuken_wasmachine_energy",
+                                "sensor.droger_aan_deze_week",
+                                "sensor.wasmachine_aan_deze_week"
+                            ],
+                            "hours_to_show": 24,
+                            "title": "Energieverbruik (1 d)",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entity": "sensor.bijkeuken_droger_power",
+                            "max": 800,
+                            "min": 0,
+                            "name": "Droger",
+                            "severity": {
+                                "green": 1,
+                                "red": 460,
+                                "yellow": 230
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.bijkeuken_wasmachine_power",
+                            "max": 450,
+                            "min": 0,
+                            "name": "Wasmachine",
+                            "severity": {
+                                "green": 1,
+                                "red": 500,
+                                "yellow": 250
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entities": [
+                                "sensor.asuswrt_download",
+                                "sensor.asuswrt_upload"
+                            ],
+                            "hours_to_show": 24,
+                            "title": "Netwerkgebruik (1 d)",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entity": "sensor.asuswrt_download_speed",
+                            "max": 90,
+                            "min": 0,
+                            "name": "download",
+                            "severity": {
+                                "green": 1,
+                                "red": 50,
+                                "yellow": 25
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.asuswrt_upload_speed",
+                            "max": 90,
+                            "min": 0,
+                            "name": "upload",
+                            "severity": {
+                                "green": 1,
+                                "red": 30,
+                                "yellow": 15
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.switch_2_battery_level"
+                                },
+                                {
+                                    "entity": "sensor.battery_voordeur"
+                                },
+                                {
+                                    "entity": "sensor.battery_woonkamer"
+                                },
+                                {
+                                    "entity": "sensor.battery_achterdeur"
+                                },
+                                {
+                                    "entity": "sensor.battery_overkapping"
+                                },
+                                {
+                                    "entity": "sensor.battery_poort"
+                                },
+                                {
+                                    "entity": "sensor.battery_overloop"
+                                },
+                                {
+                                    "entity": "sensor.battery_zolder"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Zigbee batterijen",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:monitor",
+                    "title": "Monitoring"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

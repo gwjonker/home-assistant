@@ -1,0 +1,67 @@
+# Make partial snapshot (everything except share folder where cam records)
+- alias: "Daily partial snapshot backup"
+  trigger:
+    platform: time
+    at: "03:00:00"
+  action:
+    - service: hassio.snapshot_partial
+      data_template:
+        name: Automated Partial Backup {{ now().strftime('%Y-%m-%d') }}
+        addons:
+          - 7be23ff5_dropbox_sync
+          - a0d7b954_airsonos
+          - a0d7b954_appdaemon3
+          - a0d7b954_ftp
+          - a0d7b954_mqtt
+          - core_configurator
+          - core_deconz
+          - core_duckdns
+          - core_samba
+          - core_ssh
+        folders:
+          - homeassistant
+          - ssl        
+    - service: persistent_notification.create
+      data_template:
+        message: Creating partial backup named "Automated Partial Backup {{ now().strftime('%Y-%m-%d') }}"
+        title: "Back up"
+
+
+# Copy backup folder to Dropbox
+- alias: "Copy backup folder to Dropbox"
+  trigger:
+    platform: time
+    at: "05:00:00"
+  action:
+    - service: hassio.addon_stdin
+      data_template:
+        addon: "7be23ff5_dropbox_sync"
+        input: {
+          command: "upload"
+        }
+    - service: persistent_notification.create
+      data_template:
+        message: "Copying backup folder to Dropbox ({{ now().strftime('%Y-%m-%d') }} )"
+        title: "Back up"
+
+# Cleanup old folders
+- alias: Cleanup backup-folder and carportcam shots
+  trigger:
+    platform: time
+    at: "04:30:00"
+  action:
+    - service: shell_command.delete_old_snapshots
+    - service: persistent_notification.create
+      data_template:
+        message: "Delete old backups ({{ now().strftime('%Y-%m-%d') }} )"
+        title: "Cleanup"
+    - service: shell_command.delete_old_camsnap
+    - service: persistent_notification.create
+      data_template:
+        message: "Delete old camport snapshots ({{ now().strftime('%Y-%m-%d') }} )"
+        title: "Cleanup"
+    - service: shell_command.delete_old_camrecord
+    - service: persistent_notification.create
+      data_template:
+        message: "Delete old camport videos ({{ now().strftime('%Y-%m-%d') }} )"
+        title: "Cleanup"

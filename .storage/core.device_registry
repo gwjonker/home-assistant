@@ -1,0 +1,463 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": "33f7ae1cdd7d4dcfb1570c6348c602e8",
+                "config_entries": [
+                    "69d16099abd441fda11c8aeac08e04b0"
+                ],
+                "connections": [],
+                "id": "711a11e6951546858684bf9e935b2d6b",
+                "identifiers": [
+                    [
+                        "cast",
+                        "c213e2bc5f88f736774453667b259b2e"
+                    ]
+                ],
+                "manufacturer": "Unknown manufacturer",
+                "model": "Chromecast",
+                "name": "Chromecast_Jonkertjes",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "c743aa2e85b848e8884b737484945400",
+                "config_entries": [
+                    "6009d6a056494ec1842d949e309d04fc"
+                ],
+                "connections": [],
+                "id": "56075bac40df4a1cbdf7a7e341d53c35",
+                "identifiers": [
+                    [
+                        "sonos",
+                        "RINCON_5CAAFD25A11C01400"
+                    ]
+                ],
+                "manufacturer": "Sonos",
+                "model": "Play:1",
+                "name": "Play:1",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "33f7ae1cdd7d4dcfb1570c6348c602e8",
+                "config_entries": [
+                    "6009d6a056494ec1842d949e309d04fc"
+                ],
+                "connections": [],
+                "id": "c5105f2ab7104b328c543ae921937dbc",
+                "identifiers": [
+                    [
+                        "sonos",
+                        "RINCON_5CAAFD0888F601400"
+                    ]
+                ],
+                "manufacturer": "Sonos",
+                "model": "Play:5",
+                "name": "woonkamer",
+                "name_by_user": "Play:5",
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "3ebb7596be6d47cfb8a07b698c613e8d",
+                "config_entries": [
+                    "ae875ef577e540f2a5dc0cf8a90fd2a2"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:160a0200-ac91-4b05-8adf-f5ccc5a5ebaa"
+                    ]
+                ],
+                "id": "746006a264af4782a4612d3d8d00c4cf",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:160a0200-ac91-4b05-8adf-f5ccc5a5ebaa"
+                    ]
+                ],
+                "manufacturer": "ZTE Corporation",
+                "model": null,
+                "name": "ExperiaBox-V9",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cd23695ceff34416b582c95870e7fe6f"
+                ],
+                "connections": [],
+                "id": "17995a0c313f4fd5a73e711bf4796f70",
+                "identifiers": [
+                    [
+                        "zwave",
+                        3
+                    ]
+                ],
+                "manufacturer": "FIBARO System",
+                "model": "FGWPE/F Wall Plug Gen5",
+                "name": "FIBARO System FGWPE/F Wall Plug Gen5",
+                "name_by_user": "Wall Plug - Droger",
+                "sw_version": null,
+                "via_device_id": "cc32bf8257ac4cad980a8a4b071ede2c"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cd23695ceff34416b582c95870e7fe6f"
+                ],
+                "connections": [],
+                "id": "ce2ca873489f4f299523cf92fdd56e22",
+                "identifiers": [
+                    [
+                        "zwave",
+                        4
+                    ]
+                ],
+                "manufacturer": "FIBARO System",
+                "model": "FGWPE/F Wall Plug Gen5",
+                "name": "FIBARO System FGWPE/F Wall Plug Gen5",
+                "name_by_user": "Wall Plug - Wasmachine",
+                "sw_version": null,
+                "via_device_id": "cc32bf8257ac4cad980a8a4b071ede2c"
+            },
+            {
+                "area_id": "33f7ae1cdd7d4dcfb1570c6348c602e8",
+                "config_entries": [
+                    "cd23695ceff34416b582c95870e7fe6f"
+                ],
+                "connections": [],
+                "id": "1841aba8f1c84d0f80b6aa3990c84cb5",
+                "identifiers": [
+                    [
+                        "zwave",
+                        5
+                    ]
+                ],
+                "manufacturer": "TKB Home",
+                "model": "Unknown: type=0003, id=0008",
+                "name": "TKB Home Unknown: type=0003, id=0008",
+                "name_by_user": "Woonkamer linksvoor",
+                "sw_version": null,
+                "via_device_id": "cc32bf8257ac4cad980a8a4b071ede2c"
+            },
+            {
+                "area_id": "33f7ae1cdd7d4dcfb1570c6348c602e8",
+                "config_entries": [
+                    "cd23695ceff34416b582c95870e7fe6f"
+                ],
+                "connections": [],
+                "id": "b4739c514a1d4a3898f041d4a5fa7294",
+                "identifiers": [
+                    [
+                        "zwave",
+                        6
+                    ]
+                ],
+                "manufacturer": "TKB Home",
+                "model": "Unknown: type=0003, id=0008",
+                "name": "TKB Home Unknown: type=0003, id=0008",
+                "name_by_user": "Overkapping",
+                "sw_version": null,
+                "via_device_id": "cc32bf8257ac4cad980a8a4b071ede2c"
+            },
+            {
+                "area_id": "33f7ae1cdd7d4dcfb1570c6348c602e8",
+                "config_entries": [
+                    "cd23695ceff34416b582c95870e7fe6f"
+                ],
+                "connections": [],
+                "id": "bb5c62df9e7b47fbbdd072d0c3186e3e",
+                "identifiers": [
+                    [
+                        "zwave",
+                        7
+                    ]
+                ],
+                "manufacturer": "TKB Home",
+                "model": "Unknown: type=0003, id=0008",
+                "name": "TKB Home Unknown: type=0003, id=0008",
+                "name_by_user": "Woonkamer rechtsvoor",
+                "sw_version": null,
+                "via_device_id": "cc32bf8257ac4cad980a8a4b071ede2c"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cd23695ceff34416b582c95870e7fe6f"
+                ],
+                "connections": [],
+                "id": "cc32bf8257ac4cad980a8a4b071ede2c",
+                "identifiers": [
+                    [
+                        "zwave",
+                        1
+                    ]
+                ],
+                "manufacturer": "AEON Labs",
+                "model": "ZW090 Z-Stick Gen5 EU",
+                "name": "AEON Labs ZW090 Z-Stick Gen5 EU",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:0c:6d:e3"
+                    ]
+                ],
+                "id": "acc02cca3b4942688c8e5b3037754e84",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00212EFFFF04897B"
+                    ]
+                ],
+                "manufacturer": "Dresden Elektronik",
+                "model": "deCONZ",
+                "name": "Phoscon-GW",
+                "name_by_user": null,
+                "sw_version": "2.5.66",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:21:2e:ff:ff:04:89:7b"
+                    ]
+                ],
+                "id": "fc7bff8c5a114a92b164970900a0b087",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:21:2e:ff:ff:04:89:7b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "PHDL00",
+                "name": "Daylight",
+                "name_by_user": null,
+                "sw_version": "1.0",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:02:9b:f7:09"
+                    ]
+                ],
+                "id": "5ee489c2f9dd4bf582ceab1d1f4c29ab",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:02:9b:f7:09"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_cube.aqgl01",
+                "name": "Mi Magic Cube",
+                "name_by_user": null,
+                "sw_version": "20160704",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:21:66:1e"
+                    ]
+                ],
+                "id": "460e6981ec7d4bc3b785a0516a1cb522",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:03:21:66:1e"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "Voordeur",
+                "name_by_user": null,
+                "sw_version": "20161128",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:21:97:97"
+                    ]
+                ],
+                "id": "603958cc8a034692a3c21ddd0b372e0b",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:03:21:97:97"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "Achterdeur",
+                "name_by_user": null,
+                "sw_version": "20161128",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:15:f0:c9"
+                    ]
+                ],
+                "id": "b43c4256b54342c2ae34a26083cbe6f8",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:03:15:f0:c9"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_motion.aq2",
+                "name": "Motion overloop",
+                "name_by_user": null,
+                "sw_version": "20170627",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:02:11:3d"
+                    ]
+                ],
+                "id": "d7772032c19e477abbf696bc9e786ab9",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:03:02:11:3d"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_motion.aq2",
+                "name": "Motion woonkamer",
+                "name_by_user": null,
+                "sw_version": "20170627",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:1c:8b:7e"
+                    ]
+                ],
+                "id": "1de75eed4a7b47f5812ca586513f5ff6",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:03:1c:8b:7e"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_motion.aq2",
+                "name": "Motion zolder",
+                "name_by_user": null,
+                "sw_version": "20170627",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:2b:d6:42"
+                    ]
+                ],
+                "id": "3a602e50ad5b45c6bc55bfed534aa570",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:03:2b:d6:42"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_motion.aq2",
+                "name": "Motion overkapping",
+                "name_by_user": null,
+                "sw_version": "20170627",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:17:3f:c3"
+                    ]
+                ],
+                "id": "e8c196daf42144c7b6c70fe8eeba28bb",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:03:17:3f:c3"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "Poort",
+                "name_by_user": null,
+                "sw_version": "20161128",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

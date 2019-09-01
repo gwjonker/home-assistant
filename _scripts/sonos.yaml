@@ -1,0 +1,30 @@
+# TTS to Sonos
+sonos_say:
+  name: "Sonos TTS script"
+  sequence:
+    - service: sonos.snapshot
+      data_template:
+        entity_id: "{{ sonos_entity }}"
+    - service: sonos.unjoin
+      data_template:
+        entity_id: "{{ sonos_entity }}"
+    - service: media_player.volume_set
+      data_template:
+        entity_id: "{{ sonos_entity }}"
+        volume_level: "{{ volume }}"
+    - service: tts.google_translate_say
+      data_template:
+        entity_id: "{{ sonos_entity }}"
+        message: "{{ message }}"
+    - delay: "{{ delay }}"
+    - service: sonos.restore
+      data_template:
+        entity_id: "{{ sonos_entity }}"
+
+log:
+  name: "Log to Hassio script"
+  sequence:
+    - service: persistent_notification.create
+      data_template:
+        title: "{{ title }}"
+        message: "{{ now().strftime('%Y-%m-%d %H:%M:%S') }} - '{{ message }}''"

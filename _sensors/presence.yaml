@@ -1,0 +1,41 @@
+- platform: template
+  sensors:
+    temp_woonkamer:
+      value_template: "{{ states.binary_sensor.presence_9.attributes.temperature|int }}"
+      friendly_name: "Temperatuur woonkamer"
+      unit_of_measurement: "°C"
+
+    temp_overkapping:
+      value_template: "{{ states.binary_sensor.presence_13.attributes.temperature|int }}"
+      friendly_name: "Temperatuur overkapping"
+      unit_of_measurement: "°C"
+
+    temp_zolder:
+      value_template: "{{ states.binary_sensor.presence_10.attributes.temperature|int }}"
+      friendly_name: "Temperatuur zolder"
+      unit_of_measurement: "°C"
+
+    temp_overloop:
+      value_template: "{{ states.binary_sensor.presence_7.attributes.temperature|int }}"
+      friendly_name: "Temperatuur overloop"
+      unit_of_measurement: "°C"
+
+    battery_woonkamer:
+      value_template: "{{ states.binary_sensor.presence_9.attributes.battery_level|int }}"
+      friendly_name: "Batterij woonkamer"
+      unit_of_measurement: "%"
+
+    battery_overkapping:
+      value_template: "{{ states.binary_sensor.presence_13.attributes.battery_level|int }}"
+      friendly_name: "Batterij overkapping"
+      unit_of_measurement: "%"
+
+    battery_zolder:
+      value_template: "{{ states.binary_sensor.presence_10.attributes.battery_level|int }}"
+      friendly_name: "Batterij zolder"
+      unit_of_measurement: "%"
+
+    battery_overloop:
+      value_template: "{{ states.binary_sensor.presence_7.attributes.battery_level|int }}"
+      friendly_name: "Batterij overloop"
+      unit_of_measurement: "%"

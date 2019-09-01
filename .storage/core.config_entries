@@ -1,0 +1,82 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "cast",
+                "entry_id": "69d16099abd441fda11c8aeac08e04b0",
+                "options": {},
+                "source": "discovery",
+                "title": "Google Cast",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "sonos",
+                "entry_id": "6009d6a056494ec1842d949e309d04fc",
+                "options": {},
+                "source": "discovery",
+                "title": "Sonos",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "udn": "uuid:160a0200-ac91-4b05-8adf-f5ccc5a5ebaa"
+                },
+                "domain": "upnp",
+                "entry_id": "ae875ef577e540f2a5dc0cf8a90fd2a2",
+                "options": {},
+                "source": "discovery",
+                "title": "UPnP/IGD",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "network_key": null,
+                    "usb_path": "/dev/ttyAMA0"
+                },
+                "domain": "zwave",
+                "entry_id": "cd23695ceff34416b582c95870e7fe6f",
+                "options": {},
+                "source": "import",
+                "title": "Z-Wave (import from configuration.yaml)",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "api_key": "335EE6A6C3",
+                    "bridgeid": "00212EFFFF04897B",
+                    "host": "172.30.32.1",
+                    "port": 40850
+                },
+                "domain": "deconz",
+                "entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "options": {
+                    "allow_clip_sensor": false,
+                    "allow_deconz_groups": true,
+                    "master": true
+                },
+                "source": "hassio",
+                "title": "deCONZ-00212EFFFF04897B",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "df6b72d567ef4a6db64321977031fc02",
+                "options": {},
+                "source": "import",
+                "title": "configuration.yaml",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

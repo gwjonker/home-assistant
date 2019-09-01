@@ -1,0 +1,97 @@
+
+# Wasmachine draait
+- alias: Wasmachine draait
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.bijkeuken_wasmachine_power
+    above: 10
+  condition: 
+    - condition: state
+      entity_id: input_boolean.washing_machine_on
+      state: 'off'
+  action:
+    - service: persistent_notification.create
+      data_template:
+        title: "Wasmachine draait"
+        message: "Wasmachine draait. Huidig verbruik {{ states.sensor.bijkeuken_wasmachine_power.state }} W.  
+        Totaal {{ states.sensor.bijkeuken_wasmachine_energy.state }} kWh"
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.washing_machine_on
+    - service: input_number.set_value
+      data_template:
+        entity_id: input_number.washing_machine_consumption_start
+        value: "{{ states.sensor.bijkeuken_wasmachine_energy.state }}"
+
+# Wasmachine is klaar
+- alias: Wasmachine is klaar
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.bijkeuken_wasmachine_power
+    below: 2
+    for:
+      hours: 0
+      minutes: 2
+      seconds: 0
+  condition:
+    - condition: state
+      entity_id: input_boolean.washing_machine_on
+      state: 'on'
+  action: 
+    - service: persistent_notification.create
+      data_template:
+        title: "Wasmachine is klaar"
+        message: "Wasmachine is klaar. Huidig verbruik {{ states.sensor.bijkeuken_wasmachine_power.state }} W.  
+        Totaal {{ states.sensor.bijkeuken_wasmachine_energy.state }} kWh"
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.washing_machine_on
+    - service: input_number.set_value
+      data_template:
+        entity_id: input_number.washing_machine_consumption_end
+        value: "{{ states.sensor.bijkeuken_wasmachine_energy.state }}"
+
+
+#Droger draait
+- alias: Droger draait
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.bijkeuken_droger_power
+    above: 10
+  condition: 
+    - condition: state
+      entity_id: input_boolean.dryer_on
+      state: 'off'
+  action:
+    - service: persistent_notification.create
+      data_template:
+        title: "Droger draait"
+        message: "Droger draait. Huidig verbruik {{ states.sensor.bijkeuken_droger_power.state }} W.  
+        Totaal {{ states.sensor.bijkeuken_droger_energy.state }} kWh"
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.dryer_on
+  
+# Droger is klaar
+- alias: Droger is klaar
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.bijkeuken_droger_power
+    below: 2
+    for:
+      hours: 0
+      minutes: 2
+      seconds: 0
+  condition:
+    - condition: state
+      entity_id: input_boolean.dryer_on
+      state: 'on'
+  action: 
+    - service: persistent_notification.create
+      data_template:
+        title: "Droger is klaar"
+        message: "Droger is klaar. Huidig verbruik {{ states.sensor.bijkeuken_droger_power.state }} W.  
+        Totaal {{ states.sensor.bijkeuken_droger_energy.state }} kWh"
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.dryer_on

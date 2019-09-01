@@ -1,0 +1,5 @@
+- platform: asuswrt
+  interval_seconds: 5
+  consider_home: 180
+  new_device_defaults:
+    track_new_devices: true

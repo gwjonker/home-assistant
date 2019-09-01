@@ -1,0 +1,25 @@
+woonkamer:
+  name: woonkamer
+  entities:
+    - light.woonkamer_linksvoor_level
+    - light.woonkamer_rechtsvoor_level
+    - media_player.woonkamer
+
+bijkeuken:
+  name: bijkeuken
+  entities:
+    - sensor.bijkeuken_droger_energy
+    - sensor.bijkeuken_droger_power
+    - sensor.bijkeuken_wasmachine_energy
+    - sensor.bijkeuken_wasmachine_power
+
+lichten_binnen_beneden:
+  name: Lichten binnen beneden
+  entities:
+    - light.woonkamer_linksvoor_level
+    - light.woonkamer_rechtsvoor_level
+
+lichten_buiten_beneden:
+  name: Lichten buiten beneden
+  entities:
+    - light.tuin_overkapping_level

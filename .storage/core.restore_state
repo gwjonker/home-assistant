@@ -1,0 +1,525 @@
+{
+    "data": [
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Draait de wasmachine",
+                    "icon": "mdi:washing-machine"
+                },
+                "context": {
+                    "id": "547c2ba084864c148b429fdbcacec5a2",
+                    "parent_id": "2f55228392c647158ab2eea67b64c8b8",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.washing_machine_on",
+                "last_changed": "2019-08-31T14:27:52.213211+00:00",
+                "last_updated": "2019-08-31T14:27:52.213211+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Melden beweging carport",
+                    "icon": "mdi:motion-sensor"
+                },
+                "context": {
+                    "id": "89a312d6113649ce96ec6d6477d2d455",
+                    "parent_id": "c09eafce753443a4a8ead812aa3684ba",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.motion_carport_on",
+                "last_changed": "2019-08-31T20:17:37.077980+00:00",
+                "last_updated": "2019-08-31T20:17:37.077980+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Draait de droger",
+                    "icon": "mdi:tumble-dryer"
+                },
+                "context": {
+                    "id": "3df66a63aa974935a0af4647dbede050",
+                    "parent_id": "8c22525cf9c949d59695a75f4c810147",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.dryer_on",
+                "last_changed": "2019-08-31T09:05:24.123862+00:00",
+                "last_updated": "2019-08-31T09:05:24.123862+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Verbruik wasmachine eind",
+                    "icon": "mdi:current-ac",
+                    "initial": null,
+                    "max": 1000.0,
+                    "min": 0.0,
+                    "mode": "slider",
+                    "step": 1.0,
+                    "unit_of_measurement": "kWh"
+                },
+                "context": {
+                    "id": "547c2ba084864c148b429fdbcacec5a2",
+                    "parent_id": "2f55228392c647158ab2eea67b64c8b8",
+                    "user_id": null
+                },
+                "entity_id": "input_number.washing_machine_consumption_end",
+                "last_changed": "2019-08-31T14:27:52.307162+00:00",
+                "last_updated": "2019-08-31T14:27:52.307162+00:00",
+                "state": "52.41"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Verbruik wasmachine start",
+                    "icon": "mdi:current-ac",
+                    "initial": null,
+                    "max": 1000.0,
+                    "min": 0.0,
+                    "mode": "slider",
+                    "step": 1.0,
+                    "unit_of_measurement": "kWh"
+                },
+                "context": {
+                    "id": "ffa735ac53b84df4bb39f330dede23ec",
+                    "parent_id": "851cf5b5cd9145f29df2faf713c1a03c",
+                    "user_id": null
+                },
+                "entity_id": "input_number.washing_machine_consumption_start",
+                "last_changed": "2019-08-31T14:01:31.641230+00:00",
+                "last_updated": "2019-08-31T14:01:31.641230+00:00",
+                "state": "52.3"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "duration": "0:00:10",
+                    "friendly_name": "Duur gedetecteerde beweging carport",
+                    "remaining": "0:00:00"
+                },
+                "context": {
+                    "id": "c5f3bee2241d4ffb8fb01dc30b07e6de",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "timer.motion_carport",
+                "last_changed": "2019-08-31T20:17:37.010871+00:00",
+                "last_updated": "2019-08-31T20:17:37.010871+00:00",
+                "state": "idle"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Gerwin Jonker",
+                    "id": "bcaa86bd98fd4d7196baee536fea99f0",
+                    "user_id": "7ce4f82eb4de4d4dbd64af06b8dea5e6"
+                },
+                "context": {
+                    "id": "e182e73a79474a2b8e88df49c6939348",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.gerwin_jonker",
+                "last_changed": "2019-08-29T20:21:56.220332+00:00",
+                "last_updated": "2019-08-29T20:21:56.220332+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Droger is klaar",
+                    "last_triggered": "2019-08-31T09:05:24.140647+00:00"
+                },
+                "context": {
+                    "id": "3df66a63aa974935a0af4647dbede050",
+                    "parent_id": "8c22525cf9c949d59695a75f4c810147",
+                    "user_id": null
+                },
+                "entity_id": "automation.droger_is_klaar",
+                "last_changed": "2019-08-29T20:56:06.361728+00:00",
+                "last_updated": "2019-08-31T09:05:24.142045+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Wasmachine draait",
+                    "last_triggered": "2019-08-31T14:01:31.658366+00:00"
+                },
+                "context": {
+                    "id": "ffa735ac53b84df4bb39f330dede23ec",
+                    "parent_id": "851cf5b5cd9145f29df2faf713c1a03c",
+                    "user_id": null
+                },
+                "entity_id": "automation.wasmachine_draait",
+                "last_changed": "2019-08-29T20:56:06.372194+00:00",
+                "last_updated": "2019-08-31T14:01:31.659662+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "High upload speed for 1 minute",
+                    "last_triggered": "2019-08-02T01:11:19.117793+00:00"
+                },
+                "context": {
+                    "id": "8d51ac4dbb7b4afd9814b7f57b0b99bc",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.high_upload_speed_for_1_minute",
+                "last_changed": "2019-08-29T20:56:06.384563+00:00",
+                "last_updated": "2019-08-29T20:56:06.384563+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Licht (minder gedimd) bij zonsondergang",
+                    "last_triggered": "2019-08-31T18:28:51.109284+00:00"
+                },
+                "context": {
+                    "id": "b74596f29d8c4ec89b37779eb0d6d08b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.licht_minder_gedimd_bij_zonsondergang",
+                "last_changed": "2019-08-29T20:56:06.401309+00:00",
+                "last_updated": "2019-08-31T18:28:51.113358+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Forward persistent notifications",
+                    "last_triggered": "2019-08-31T21:53:14.358654+00:00"
+                },
+                "context": {
+                    "id": "84f48de9bdaf4b7493247b1287fb5fbb",
+                    "parent_id": "542ab4332e9c431ba99b84deae4c49d5",
+                    "user_id": null
+                },
+                "entity_id": "automation.forward_persistent_notifications",
+                "last_changed": "2019-08-29T20:56:06.413053+00:00",
+                "last_updated": "2019-08-31T21:53:14.359850+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Z-Wave network is starting",
+                    "last_triggered": "2019-08-05T10:18:18.551317+00:00"
+                },
+                "context": {
+                    "id": "705de990840c41b4b511de7e570ba47c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.z_wave_network_is_starting",
+                "last_changed": "2019-08-29T20:56:06.426008+00:00",
+                "last_updated": "2019-08-29T20:56:06.426008+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Cleanup backup-folder and carportcam shots",
+                    "last_triggered": "2019-08-31T02:30:00.025906+00:00"
+                },
+                "context": {
+                    "id": "dcd7b1ffaec645318aae55e0fec43a53",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.cleanup_backup_folder_and_carportcam_shots",
+                "last_changed": "2019-08-29T20:56:06.443525+00:00",
+                "last_updated": "2019-08-31T02:30:00.027042+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Z-Wave network is ready",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "368185f13499479891341e3966fda2b2",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.z_wave_network_is_ready",
+                "last_changed": "2019-08-29T20:56:06.454936+00:00",
+                "last_updated": "2019-08-29T20:56:06.454936+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Licht (gedimd) aan half uur voor zonsondergang",
+                    "last_triggered": "2019-08-31T17:58:51.145741+00:00"
+                },
+                "context": {
+                    "id": "4bbae8558ff54f4d8888eb11cc46553a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.licht_gedimd_aan_half_uur_voor_zonsondergang",
+                "last_changed": "2019-08-29T20:56:06.468633+00:00",
+                "last_updated": "2019-08-31T17:58:51.147141+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Wasmachine is klaar",
+                    "last_triggered": "2019-08-31T14:27:52.341991+00:00"
+                },
+                "context": {
+                    "id": "547c2ba084864c148b429fdbcacec5a2",
+                    "parent_id": "2f55228392c647158ab2eea67b64c8b8",
+                    "user_id": null
+                },
+                "entity_id": "automation.wasmachine_is_klaar",
+                "last_changed": "2019-08-29T20:56:06.478152+00:00",
+                "last_updated": "2019-08-31T14:27:52.343385+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Droger draait",
+                    "last_triggered": "2019-08-31T06:59:28.786764+00:00"
+                },
+                "context": {
+                    "id": "dd805194f50f40ffa21edb24b80b15d6",
+                    "parent_id": "ab1c0ee9274b4236a901ef36cd2dbc4c",
+                    "user_id": null
+                },
+                "entity_id": "automation.droger_draait",
+                "last_changed": "2019-08-29T20:56:06.487690+00:00",
+                "last_updated": "2019-08-31T06:59:28.788118+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Copy backup folder to Dropbox",
+                    "last_triggered": "2019-08-31T03:00:00.480462+00:00"
+                },
+                "context": {
+                    "id": "3281bc4709e84a1992d3338cbd985ad9",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.copy_backup_folder_to_dropbox",
+                "last_changed": "2019-08-29T20:56:06.503929+00:00",
+                "last_updated": "2019-08-31T03:00:00.486495+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Carport motion detected",
+                    "last_triggered": "2019-08-31T20:17:26.265623+00:00"
+                },
+                "context": {
+                    "id": "17bbe775171048308951002254bb7f9a",
+                    "parent_id": "b43429b5992a4de5b835437a16ced168",
+                    "user_id": null
+                },
+                "entity_id": "automation.carport_motion_detected",
+                "last_changed": "2019-08-29T20:56:06.513246+00:00",
+                "last_updated": "2019-08-31T20:17:26.266844+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "High download speed for 1 minute",
+                    "last_triggered": "2019-08-31T19:14:20.101577+00:00"
+                },
+                "context": {
+                    "id": "83066ee5032f4d06ae32324f5cfb5217",
+                    "parent_id": "82c3f64b4a26424d8bdfc63a93b080ff",
+                    "user_id": null
+                },
+                "entity_id": "automation.high_download_speed_for_1_minute",
+                "last_changed": "2019-08-29T20:56:06.522610+00:00",
+                "last_updated": "2019-08-31T19:14:20.102835+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Carport motion detected ended",
+                    "last_triggered": "2019-08-31T20:17:37.088628+00:00"
+                },
+                "context": {
+                    "id": "89a312d6113649ce96ec6d6477d2d455",
+                    "parent_id": "c09eafce753443a4a8ead812aa3684ba",
+                    "user_id": null
+                },
+                "entity_id": "automation.carport_motion_detected_ended",
+                "last_changed": "2019-08-29T20:56:06.531691+00:00",
+                "last_updated": "2019-08-31T20:17:37.090123+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-09-01T00:46:53.010563+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Daily partial snapshot backup",
+                    "last_triggered": "2019-08-31T01:00:10.139164+00:00"
+                },
+                "context": {
+                    "id": "396bff0263fe425985689a066227ef30",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.daily_partial_snapshot_backup",
+                "last_changed": "2019-08-29T20:56:06.540346+00:00",
+                "last_updated": "2019-08-31T01:00:10.141259+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-28T20:44:14.386275+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Daily full snapshot backup",
+                    "last_triggered": "2019-08-28T01:00:10.123398+00:00"
+                },
+                "context": {
+                    "id": "0971210ae9164c9abad6d7124cc6e6cb",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.daily_full_snapshot_backup",
+                "last_changed": "2019-08-05T10:18:08.452721+00:00",
+                "last_updated": "2019-08-28T01:00:10.126998+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-28T21:22:49.568010+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Carport cam snapshot detect",
+                    "last_triggered": "2019-08-28T19:58:52.731151+00:00"
+                },
+                "context": {
+                    "id": "240024ff7b5b4ac9b55f19f89aa3c421",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.carport_cam_snapshot_detect",
+                "last_changed": "2019-08-28T21:06:14.563775+00:00",
+                "last_updated": "2019-08-28T21:06:14.563775+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-28T21:22:49.499381+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Carport cam snapshot detect",
+                    "last_triggered": "2019-08-28T19:58:52.519128+00:00"
+                },
+                "context": {
+                    "id": "266620935ef1426ba4ad7174349d8e21",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.carport_cam_snapshot_detect_2",
+                "last_changed": "2019-08-28T21:06:14.775089+00:00",
+                "last_updated": "2019-08-28T21:06:14.775089+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-29T06:36:10.769960+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Carport cam snapshot detect (modified)",
+                    "last_triggered": "2019-08-29T06:23:58.985277+00:00"
+                },
+                "context": {
+                    "id": "dbc6b5e0f38448fdbd69b3c981690a1f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.carport_cam_snapshot_detect_modified",
+                "last_changed": "2019-08-28T21:22:50.360176+00:00",
+                "last_updated": "2019-08-29T06:23:58.986997+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-08-29T18:25:54.755604+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Carport cam snapshot detect (created)",
+                    "last_triggered": "2019-08-29T16:48:42.194835+00:00"
+                },
+                "context": {
+                    "id": "9b852bbbc517400bb39c059f89461558",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.carport_cam_snapshot_detect_created",
+                "last_changed": "2019-08-29T06:36:11.653118+00:00",
+                "last_updated": "2019-08-29T16:48:42.196454+00:00",
+                "state": "on"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

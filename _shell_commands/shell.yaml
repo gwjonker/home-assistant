@@ -1,0 +1,8 @@
+# delete backups older then 7 days
+delete_old_snapshots: 'find /backup/* -mtime +7 -exec rm {} \;'
+
+# delete carportcam stills older then 7 days
+delete_old_camsnap: 'find /share/carportcam/FI9900P_00626E944A34/snap/* -mtime +7 -exec rm {} \;'
+
+# delete carportcam videos older then 3 days
+delete_old_camrecord: 'find /share/carportcam/FI9900P_00626E944A34/record/* -mtime +3 -exec rm {} \;'

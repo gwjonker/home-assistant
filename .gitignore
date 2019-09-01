@@ -1,0 +1,38 @@
+# ignore logs
+home-assistant.log
+OZW_Log.txt
+
+
+# ignore cloud
+.cloud
+
+# ignore some files
+.storage/auth
+.storage/auth_provider.homeassistant
+.storage/cloud
+.storage/person
+
+# ignore secrets
+secrets.yaml
+known_devices.yaml
+ip_bans.yaml
+zwave_device_config.yaml
+
+# ignore meuk
+._.DS_Store
+
+# ignore db
+home-assistant_v2.db
+pyozw.sqlite
+
+# compiled python
+appdaemon/apps/__pycache__/*.pyc
+
+# node red
+node-red
+
+# tts
+tts/*.mp3
+
+# themes
+_themes

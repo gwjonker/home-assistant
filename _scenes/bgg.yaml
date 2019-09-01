@@ -1,0 +1,49 @@
+# Lichten begane grond
+
+- name: Film
+  entities:
+    light.woonkamer_linksvoor_level:
+      state: true
+      brightness_pct: 35
+    light.woonkamer_rechtsvoor_level:
+      state: true
+      brightness_pct: 35
+    light.tuin_overkapping_level:
+      state: true
+      brightness_pct: 35
+
+- name: Conversatie
+  entities:
+    light.woonkamer_linksvoor_level:
+      state: true
+      brightness_pct: 45
+    light.woonkamer_rechtsvoor_level:
+      state: true
+      brightness_pct: 45
+    light.tuin_overkapping_level:
+      state: true
+      brightness_pct: 45
+
+- name: Verjaardag
+  entities:
+    light.woonkamer_linksvoor_level:
+      state: true
+      brightness_pct: 65
+    light.woonkamer_rechtsvoor_level:
+      state: true
+      brightness_pct: 65
+    light.tuin_overkapping_level:
+      state: true
+      brightness_pct: 65
+
+- name: Maximaal
+  entities:
+    light.woonkamer_linksvoor_level:
+      state: true
+      brightness_pct: 100
+    light.woonkamer_rechtsvoor_level:
+      state: true
+      brightness_pct: 100
+    light.tuin_overkapping_level:
+      state: true
+      brightness_pct: 100

@@ -1,0 +1,28 @@
+{
+    "data": {
+        "areas": [
+            {
+                "id": "ebb758779262457e81e3638743c8f336",
+                "name": "Living Room"
+            },
+            {
+                "id": "c743aa2e85b848e8884b737484945400",
+                "name": "Keuken"
+            },
+            {
+                "id": "162eaef817ba451da9c17456a2ff8cef",
+                "name": "Slaapkamer"
+            },
+            {
+                "id": "33f7ae1cdd7d4dcfb1570c6348c602e8",
+                "name": "Woonkamer"
+            },
+            {
+                "id": "3ebb7596be6d47cfb8a07b698c613e8d",
+                "name": "Meterkast"
+            }
+        ]
+    },
+    "key": "core.area_registry",
+    "version": 1
+}

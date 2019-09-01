@@ -1,0 +1,155 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: !secret home_elevation
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Amsterdam
+  # Customization file
+  customize: !include customize.yaml
+  whitelist_external_dirs:
+    - /config
+    - /share
+    - /home
+
+#inlcude files
+group: !include_dir_merge_named _groups/
+scene: !include_dir_merge_list _scenes/
+automation: !include_dir_merge_list _automation/
+script: !include_dir_merge_list _scripts/
+sensor: !include_dir_merge_list _sensors/
+device_tracker: !include_dir_merge_list _trackers/
+shell_command: !include_dir_merge_list _shell_commands/
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+frontend:
+  themes: !include_dir_merge_named _themes
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+http:
+  base_url: !secret http_base_url
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+# Discover some devices automatically
+# discovery:
+
+# Camera's
+camera:
+  - platform: !secret camera_carport_platform
+    ip: !secret camera_carport_ip
+    port: !secret camera_carport_port
+    name: Carport
+    username: !secret camera_carport_username
+    password: !secret camera_carport_password
+
+# Routers
+asuswrt:
+  host: !secret asusrouter_host
+  username: !secret asusrouter_username
+  password: !secret asusrouter_password
+  mode: ap
+  sensors:
+    - upload
+    - download
+    - upload_speed
+    - download_speed
+
+# Z-Wave
+zwave:
+  usb_path: /dev/ttyACM1
+  network_key: !secret zwave_network_key
+
+# Notifiers
+notify:
+  - name: pushbullet
+    platform: pushbullet
+    api_key: !secret pushbullet_api_key
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+# Rest commands
+rest_command:
+  backup_to_google:
+    url: !secret rest_command_backup_to_google
+
+# UI
+# panel_iframe:
+#   grafana:
+#     title: Grafana
+#     icon: mdi:chart-timeline
+#     url: http://hassio.local:3000
+
+# Booleans
+input_boolean:
+  washing_machine_on:
+    name: Draait de wasmachine
+    initial: "off"
+    icon: mdi:washing-machine
+  dryer_on:
+    name: Draait de droger
+    initial: "off"
+    icon: mdi:tumble-dryer
+  motion_carport_on:
+    name: Melden beweging carport
+    initial: "off"
+    icon: mdi:motion-sensor
+
+# Numbers / no longer in use / for example
+input_number:
+  washing_machine_consumption_start:
+    name: Verbruik wasmachine start
+    unit_of_measurement: kWh
+    icon: mdi:current-ac
+    min: 0
+    max: 1000
+  washing_machine_consumption_end:
+    name: Verbruik wasmachine eind
+    unit_of_measurement: kWh
+    icon: mdi:current-ac
+    min: 0
+    max: 1000
+
+# Timers
+timer:
+  motion_carport:
+    name: "Duur gedetecteerde beweging carport"
+
+# Enables support for tracking state changes over time
+#history:
+
+# View all events in a logbook
+#logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+weather:
+  - platform: darksky
+    api_key: !secret weather_dark_sky_api_key
+
+# mqtt server
+mqtt:
+  broker: a0d7b954-mqtt
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  client_id: home-assistant
+
+# watch folder
+folder_watcher:
+  - folder: /share #/share/carportcam/FI9900P_00626E944A34/snap
+    patterns:
+      - "*.jpg"
+      - "*.txt"
+      - "*.rtf"

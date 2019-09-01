@@ -1,0 +1,5 @@
+- platform: mqtt
+  state_topic: "homeassistant/carport/motion"
+  name: "Beweging carport"
+  icon: mdi:motion-sensor
+
