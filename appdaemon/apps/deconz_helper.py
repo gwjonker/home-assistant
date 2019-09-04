@@ -57,8 +57,9 @@ class DeconzHelper(hass.Hass):
             return new;
 
         #Woonkamer linksvoor
-        cur_brightness = self.get_state("light.woonkamer_linksvoor_level", attribute ="brightness") or 0
-                
+        #cur_brightness = self.get_state("light.woonkamer_linksvoor_level", attribute ="brightness") or 0
+        cur_brightness = self.entities.light.woonkamer_linksvoor_level.attributes.brightness or 0
+
         new_brightness = NewValidBrightness(cur = cur_brightness, mod = mod_brightness)
         
         if new_brightness == 0:
