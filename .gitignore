@@ -36,3 +36,6 @@ tts/*.mp3
 
 # themes
 _themes
+
+# IDE
+.idea
