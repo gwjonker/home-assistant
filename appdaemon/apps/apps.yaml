@@ -6,3 +6,19 @@ hello_world:
 mi_magic_cube:
   module: mi_magic_cube
   class: MiMagicCube
+
+turn_off_lights_woonkamer:
+  module: remoting_lights
+  class: TurnOffLight
+  lights:
+    - light.woonkamer_rechtsvoor_level
+    - light.woonkamer_linksvoor_level
+    - light.tuin_overkapping_level
+
+turn_on_lights_woonkamer:
+  module: remoting_lights
+  class: TurnOnLight
+  lights:
+    - light.woonkamer_rechtsvoor_level
+    - light.woonkamer_linksvoor_level
+    - light.tuin_overkapping_level
