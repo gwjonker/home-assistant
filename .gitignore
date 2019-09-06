@@ -20,6 +20,7 @@ zwave_device_config.yaml
 
 # ignore meuk
 ._.DS_Store
+.com.apple.timemachine*
 
 # ignore db
 home-assistant_v2.db
