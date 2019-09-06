@@ -18,6 +18,25 @@ turn_off_lights_woonkamer:
 turn_on_lights_woonkamer:
   module: remoting_lights
   class: TurnOnLight
+  scene: scene.conversatie
+  lights:
+    - light.woonkamer_rechtsvoor_level
+    - light.woonkamer_linksvoor_level
+    - light.tuin_overkapping_level
+
+inc_brightness_lights_woonkamer:
+  module: remoting_lights
+  class: IncreaseBrightnessLight
+  step: 20
+  lights:
+    - light.woonkamer_rechtsvoor_level
+    - light.woonkamer_linksvoor_level
+    - light.tuin_overkapping_level
+ 
+dec_brightness_lights_woonkamer:
+  module: remoting_lights
+  class: DecreaseBrightnessLight
+  step: 20
   lights:
     - light.woonkamer_rechtsvoor_level
     - light.woonkamer_linksvoor_level
