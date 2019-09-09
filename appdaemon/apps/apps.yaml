@@ -41,3 +41,34 @@ dec_brightness_lights_woonkamer:
     - light.woonkamer_rechtsvoor_level
     - light.woonkamer_linksvoor_level
     - light.tuin_overkapping_level
+
+# motion_lux_light:
+#   module: motion_lux_light
+#   class: MotionLuxLight
+#   #light_entity: light.light_overloop    
+#   light_entity: light.woonkamer_bureau            
+#   lux_entity: sensor.lightlevel_overloop        
+#   motion_entity: binary_sensor.presence_overloop 
+#   sleeping:
+#     start: "1:30:00"
+#     end: "6:30:00"
+#   periods:
+#     sleeping:
+#       lux_below: 1000
+#       intervals:
+#         interval_1:
+#             duration: 15
+#             brightness: 254
+#         interval_2:
+#             duration: 10
+#             brightness: 128
+#         interval_3:
+#             duration: 5
+#             brightness: 60
+#     awake:
+#       lux_below: 20
+#       intervals:
+#         interval_1:
+#           duration: 180
+#           brightness: 254
+
