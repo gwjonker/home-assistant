@@ -13,7 +13,7 @@
                     ],
                     "cards": [
                         {
-                            "columns": 3,
+                            "columns": 2,
                             "entities": [
                                 {
                                     "entity": "light.woonkamer_linksvoor_level"
@@ -23,6 +23,15 @@
                                 },
                                 {
                                     "entity": "light.tuin_overkapping_level"
+                                },
+                                {
+                                    "entity": "light.light_overloop"
+                                },
+                                {
+                                    "entity": "light.woonkamer_tv"
+                                },
+                                {
+                                    "entity": "light.woonkamer_bureau"
                                 }
                             ],
                             "type": "glance"
@@ -42,7 +51,7 @@
                                     "entity": "scene.maximaal"
                                 },
                                 {
-                                    "entity": "group.all_lights"
+                                    "entity": "group.woonkamer"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -60,8 +69,22 @@
                             "type": "light"
                         },
                         {
+                            "entity": "light.light_overloop",
+                            "name": "Licht overloop",
+                            "type": "light"
+                        },
+                        {
                             "entity": "light.woonkamer_rechtsvoor_level",
                             "name": "Woonkamer rechtsvoor",
+                            "type": "light"
+                        },
+                        {
+                            "entity": "light.woonkamer_tv",
+                            "name": "Woonkamer TV",
+                            "type": "light"
+                        },
+                        {
+                            "entity": "light.woonkamer_bureau",
                             "type": "light"
                         },
                         {
@@ -71,14 +94,9 @@
                             "type": "sensor"
                         },
                         {
-                            "entity": "sensor.lightlevel_6",
+                            "entity": "sensor.lightlevel_overloop",
                             "graph": "line",
                             "name": "Licht overloop",
-                            "type": "sensor"
-                        },
-                        {
-                            "entity": "sensor.lightlevel_8",
-                            "graph": "line",
                             "type": "sensor"
                         },
                         {
@@ -88,8 +106,13 @@
                             "type": "sensor"
                         },
                         {
-                            "entity": "sensor.mi_magic_cube_event",
-                            "name": "Last Magic Cube event",
+                            "entity": "sensor.mi_magic_cube",
+                            "name": "Mi Magic Cube latest action",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.lightlevel_8",
+                            "graph": "line",
                             "type": "sensor"
                         }
                     ],
@@ -129,7 +152,7 @@
                                     "entity": "sensor.beweging_carport"
                                 },
                                 {
-                                    "entity": "binary_sensor.presence_7"
+                                    "entity": "binary_sensor.presence_overloop"
                                 },
                                 {
                                     "entity": "binary_sensor.presence_10"

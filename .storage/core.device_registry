@@ -282,7 +282,7 @@
                 "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
             },
             {
-                "area_id": null,
+                "area_id": "3ebb7596be6d47cfb8a07b698c613e8d",
                 "config_entries": [
                     "1de547cb3c274c778daf8915e66feef1"
                 ],
@@ -307,7 +307,7 @@
                 "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
             },
             {
-                "area_id": null,
+                "area_id": "c743aa2e85b848e8884b737484945400",
                 "config_entries": [
                     "1de547cb3c274c778daf8915e66feef1"
                 ],
@@ -332,7 +332,7 @@
                 "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
             },
             {
-                "area_id": null,
+                "area_id": "c63af0ce919047efbfea76ae7ba51e14",
                 "config_entries": [
                     "1de547cb3c274c778daf8915e66feef1"
                 ],
@@ -357,7 +357,7 @@
                 "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
             },
             {
-                "area_id": null,
+                "area_id": "33f7ae1cdd7d4dcfb1570c6348c602e8",
                 "config_entries": [
                     "1de547cb3c274c778daf8915e66feef1"
                 ],
@@ -382,7 +382,7 @@
                 "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
             },
             {
-                "area_id": null,
+                "area_id": "b8a2dbcc88d2401ba9b6afbd6978a8a3",
                 "config_entries": [
                     "1de547cb3c274c778daf8915e66feef1"
                 ],
@@ -407,7 +407,7 @@
                 "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
             },
             {
-                "area_id": null,
+                "area_id": "1174f6de208c4042a36ad7fd8c852c80",
                 "config_entries": [
                     "1de547cb3c274c778daf8915e66feef1"
                 ],
@@ -454,6 +454,106 @@
                 "name": "Poort",
                 "name_by_user": null,
                 "sw_version": "20161128",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": "c63af0ce919047efbfea76ae7ba51e14",
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:04:b9:84:fe"
+                    ]
+                ],
+                "id": "a383105121b44113a1c2a21d934dc6c9",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:04:b9:84:fe"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LWB010",
+                "name": "Licht overloop",
+                "name_by_user": "Licht overloop",
+                "sw_version": "1.29.0_r21169",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:06:73:25:1e"
+                    ]
+                ],
+                "id": "da1ab16e3a2d4523bf6859968c35417c",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:06:73:25:1e"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "RWL021",
+                "name": "Dimmer Switch",
+                "name_by_user": null,
+                "sw_version": "5.45.1.17846",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": "33f7ae1cdd7d4dcfb1570c6348c602e8",
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:0b:3c:ff:fe:fc:f0:bf"
+                    ]
+                ],
+                "id": "2418f38fecc44d818210d9fceff8498a",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:0b:3c:ff:fe:fc:f0:bf"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 W opal 1000lm",
+                "name": "Woonkamer TV",
+                "name_by_user": null,
+                "sw_version": "1.2.214",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": "33f7ae1cdd7d4dcfb1570c6348c602e8",
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "08:6b:d7:ff:fe:34:0a:22"
+                    ]
+                ],
+                "id": "dbecde377e3e4434b223e9b290eb9b1a",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "08:6b:d7:ff:fe:34:0a:22"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 W opal 1000lm",
+                "name": "Woonkamer bureau",
+                "name_by_user": null,
+                "sw_version": "1.2.214",
                 "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
             }
         ]

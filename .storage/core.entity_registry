@@ -732,24 +732,6 @@
             },
             {
                 "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
-                "device_id": "b43c4256b54342c2ae34a26083cbe6f8",
-                "disabled_by": null,
-                "entity_id": "sensor.lightlevel_6",
-                "name": null,
-                "platform": "deconz",
-                "unique_id": "00:15:8d:00:03:15:f0:c9-01-0400"
-            },
-            {
-                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
-                "device_id": "b43c4256b54342c2ae34a26083cbe6f8",
-                "disabled_by": null,
-                "entity_id": "binary_sensor.presence_7",
-                "name": null,
-                "platform": "deconz",
-                "unique_id": "00:15:8d:00:03:15:f0:c9-01-0406"
-            },
-            {
-                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
                 "device_id": "d7772032c19e477abbf696bc9e786ab9",
                 "disabled_by": null,
                 "entity_id": "sensor.lightlevel_8",
@@ -810,6 +792,78 @@
                 "name": null,
                 "platform": "deconz",
                 "unique_id": "00:15:8d:00:03:17:3f:c3-01-0006"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.vpir_motion",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "vpir-1567619808630"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "da1ab16e3a2d4523bf6859968c35417c",
+                "disabled_by": null,
+                "entity_id": "sensor.dimmer_switch_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:17:88:01:06:73:25:1e-02-fc00"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fsm_state_motion",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "fsm-state-1567619808630"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "b43c4256b54342c2ae34a26083cbe6f8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.presence_overloop",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:15:f0:c9-01-0406"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "a383105121b44113a1c2a21d934dc6c9",
+                "disabled_by": null,
+                "entity_id": "light.light_overloop",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:17:88:01:04:b9:84:fe-0b"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "b43c4256b54342c2ae34a26083cbe6f8",
+                "disabled_by": null,
+                "entity_id": "sensor.lightlevel_overloop",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:15:f0:c9-01-0400"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "2418f38fecc44d818210d9fceff8498a",
+                "disabled_by": null,
+                "entity_id": "light.woonkamer_tv",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:0b:3c:ff:fe:fc:f0:bf-01"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "dbecde377e3e4434b223e9b290eb9b1a",
+                "disabled_by": null,
+                "entity_id": "light.woonkamer_bureau",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "08:6b:d7:ff:fe:34:0a:22-01"
             }
         ]
     },

@@ -2,10 +2,6 @@
     "data": {
         "areas": [
             {
-                "id": "ebb758779262457e81e3638743c8f336",
-                "name": "Living Room"
-            },
-            {
                 "id": "c743aa2e85b848e8884b737484945400",
                 "name": "Keuken"
             },
@@ -20,6 +16,18 @@
             {
                 "id": "3ebb7596be6d47cfb8a07b698c613e8d",
                 "name": "Meterkast"
+            },
+            {
+                "id": "c63af0ce919047efbfea76ae7ba51e14",
+                "name": "Overloop"
+            },
+            {
+                "id": "b8a2dbcc88d2401ba9b6afbd6978a8a3",
+                "name": "Zolder"
+            },
+            {
+                "id": "1174f6de208c4042a36ad7fd8c852c80",
+                "name": "Overkapping"
             }
         ]
     },

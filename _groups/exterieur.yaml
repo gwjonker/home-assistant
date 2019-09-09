@@ -1,9 +1,0 @@
-achtertuin:
-  name: achtertuin
-  entities:
-    - light.tuin_overkapping_level
-
-voortuin:
-  name: voortuin
-  entities:
-    - camera.carport

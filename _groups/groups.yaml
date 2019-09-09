@@ -1,0 +1,8 @@
+woonkamer:
+  name: woonkamer
+  entities:
+    - light.woonkamer_linksvoor_level
+    - light.woonkamer_rechtsvoor_level
+    - light.tuin_overkapping_level
+    - light.woonkamer_tv
+    - light.woonkamer_bureau
