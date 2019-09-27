@@ -6,3 +6,11 @@ woonkamer:
     - light.tuin_overkapping_level
     - light.woonkamer_tv
     - light.woonkamer_bureau
+    - group.woonkamer_piano
+
+woonkamer_piano:
+  name: Woonkamer piano
+  entities:
+    - light.woonkamer_piano_1    
+    - light.woonkamer_piano_2    
+    - light.woonkamer_piano_3
