@@ -18,6 +18,9 @@
           - core_duckdns
           - core_samba
           - core_ssh
+          - a0d7b954_plex
+          - a0d7b954_ssh
+          - a0d7b954_influxdb
         folders:
           - homeassistant
           - ssl        

@@ -153,3 +153,12 @@ folder_watcher:
       - "*.jpg"
       - "*.txt"
       - "*.rtf"
+
+influxdb:
+  host: a0d7b954-influxdb
+  port: 8086
+  database: !secret influxdb_name 
+  username: !secret influxdb_username
+  password: !secret influxdb_password
+  max_retries: 3
+  default_measurement: state
