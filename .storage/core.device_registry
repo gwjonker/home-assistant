@@ -555,6 +555,166 @@
                 "name_by_user": null,
                 "sw_version": "1.2.214",
                 "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [],
+                "id": "9429f02f5b454b7bb5e54f2871a601b9",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00212EFFFF04897B-/groups/4"
+                    ]
+                ],
+                "manufacturer": "Dresden Elektronik",
+                "model": "deCONZ group",
+                "name": "Overloop",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [],
+                "id": "49d53a97279d44a8b625d273cadc91cc",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00212EFFFF04897B-/groups/1409"
+                    ]
+                ],
+                "manufacturer": "Dresden Elektronik",
+                "model": "deCONZ group",
+                "name": "RWL021",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [],
+                "id": "8ab33b00d67a492fbe02362a84ddba66",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00212EFFFF04897B-/groups/17225"
+                    ]
+                ],
+                "manufacturer": "Dresden Elektronik",
+                "model": "deCONZ group",
+                "name": "TRADFRI remote control 41",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:0d:6f:ff:fe:16:fa:ec"
+                    ]
+                ],
+                "id": "6f2fc0561c0a4c47a4e78bdd9c897f81",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:0d:6f:ff:fe:16:fa:ec"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI remote control",
+                "name": "TR\u00c5DFRI remote control",
+                "name_by_user": null,
+                "sw_version": "1.2.214",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "08:6b:d7:ff:fe:03:ad:2b"
+                    ]
+                ],
+                "id": "da2b159d05b445e5bfbd57cfdeffbfe3",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "08:6b:d7:ff:fe:03:ad:2b"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E14 W op/ch 400lm",
+                "name": "Woonkamer piano 3",
+                "name_by_user": null,
+                "sw_version": "1.2.214",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "08:6b:d7:ff:fe:2b:28:55"
+                    ]
+                ],
+                "id": "79288bdb852c40cbbee02ca1593bfd95",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "08:6b:d7:ff:fe:2b:28:55"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E14 W op/ch 400lm",
+                "name": "Woonkamer piano 1",
+                "name_by_user": null,
+                "sw_version": "1.2.214",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "1de547cb3c274c778daf8915e66feef1"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "08:6b:d7:ff:fe:2d:08:6a"
+                    ]
+                ],
+                "id": "78a23a182e4f44caae04b9ebfc1b0be8",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "08:6b:d7:ff:fe:2d:08:6a"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E14 W op/ch 400lm",
+                "name": "Woonkamer piano 2",
+                "name_by_user": null,
+                "sw_version": "1.2.214",
+                "via_device_id": "acc02cca3b4942688c8e5b3037754e84"
             }
         ]
     },

@@ -3,11 +3,16 @@
         "entries": [
             {
                 "connection_class": "local_push",
-                "data": {},
+                "data": {
+                    "user_id": "76ebf5a0fd2a4191a9f47b4dd1daee89"
+                },
                 "domain": "cast",
                 "entry_id": "69d16099abd441fda11c8aeac08e04b0",
                 "options": {},
                 "source": "discovery",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "Google Cast",
                 "version": 1
             },
@@ -18,6 +23,9 @@
                 "entry_id": "6009d6a056494ec1842d949e309d04fc",
                 "options": {},
                 "source": "discovery",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "Sonos",
                 "version": 1
             },
@@ -30,6 +38,9 @@
                 "entry_id": "ae875ef577e540f2a5dc0cf8a90fd2a2",
                 "options": {},
                 "source": "discovery",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "UPnP/IGD",
                 "version": 1
             },
@@ -43,6 +54,9 @@
                 "entry_id": "cd23695ceff34416b582c95870e7fe6f",
                 "options": {},
                 "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "Z-Wave (import from configuration.yaml)",
                 "version": 1
             },
@@ -62,6 +76,9 @@
                     "master": true
                 },
                 "source": "hassio",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "deCONZ-00212EFFFF04897B",
                 "version": 1
             },
@@ -72,6 +89,9 @@
                 "entry_id": "df6b72d567ef4a6db64321977031fc02",
                 "options": {},
                 "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "configuration.yaml",
                 "version": 1
             }

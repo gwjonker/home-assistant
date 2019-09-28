@@ -864,6 +864,78 @@
                 "name": null,
                 "platform": "deconz",
                 "unique_id": "08:6b:d7:ff:fe:34:0a:22-01"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.updater",
+                "name": null,
+                "platform": "updater",
+                "unique_id": "updater"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "9429f02f5b454b7bb5e54f2871a601b9",
+                "disabled_by": null,
+                "entity_id": "light.overloop",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00212EFFFF04897B-/groups/4"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "49d53a97279d44a8b625d273cadc91cc",
+                "disabled_by": null,
+                "entity_id": "light.rwl021",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00212EFFFF04897B-/groups/1409"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "6f2fc0561c0a4c47a4e78bdd9c897f81",
+                "disabled_by": null,
+                "entity_id": "sensor.tradfri_remote_control_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:0d:6f:ff:fe:16:fa:ec-01-1000"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "8ab33b00d67a492fbe02362a84ddba66",
+                "disabled_by": null,
+                "entity_id": "light.tradfri_remote_control",
+                "name": "TRADFRI remote control",
+                "platform": "deconz",
+                "unique_id": "00212EFFFF04897B-/groups/17225"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "da2b159d05b445e5bfbd57cfdeffbfe3",
+                "disabled_by": null,
+                "entity_id": "light.woonkamer_piano_3",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "08:6b:d7:ff:fe:03:ad:2b-01"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "79288bdb852c40cbbee02ca1593bfd95",
+                "disabled_by": null,
+                "entity_id": "light.woonkamer_piano_1",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "08:6b:d7:ff:fe:2b:28:55-01"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "78a23a182e4f44caae04b9ebfc1b0be8",
+                "disabled_by": null,
+                "entity_id": "light.woonkamer_piano_2",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "08:6b:d7:ff:fe:2d:08:6a-01"
             }
         ]
     },

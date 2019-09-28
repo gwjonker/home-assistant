@@ -41,3 +41,7 @@ _themes
 # IDE
 .idea
 .com.apple.timemachine.supported
+.storage/core.config_entries
+.storage/core.device_registry
+.storage/core.entity_registry
+.storage/core.restore_state
