@@ -8,7 +8,7 @@
         domain: persistent_notification
         service: create
   action:
-    - service: notify.pushbullet
+    - service: notify.slack
       data_template:
         message: >-
           {% set message = trigger.event.data.service_data.message %}
