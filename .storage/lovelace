@@ -13,8 +13,25 @@
                     ],
                     "cards": [
                         {
+                            "entity": "group.woonkamer",
+                            "hold_action": {
+                                "action": "more-info"
+                            },
+                            "icon": "mdi:lightbulb-outline",
+                            "name": "Alle lichten woonkamer",
+                            "show_icon": true,
+                            "show_name": true,
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "type": "entity-button"
+                        },
+                        {
                             "columns": 2,
                             "entities": [
+                                {
+                                    "entity": "light.woonkamer_tv"
+                                },
                                 {
                                     "entity": "light.woonkamer_linksvoor_level"
                                 },
@@ -22,18 +39,19 @@
                                     "entity": "light.woonkamer_rechtsvoor_level"
                                 },
                                 {
-                                    "entity": "light.tuin_overkapping_level"
+                                    "entity": "group.woonkamer_piano"
+                                },
+                                {
+                                    "entity": "light.woonkamer_bureau"
                                 },
                                 {
                                     "entity": "light.light_overloop"
                                 },
                                 {
-                                    "entity": "light.woonkamer_tv"
-                                },
-                                {
-                                    "entity": "light.woonkamer_bureau"
+                                    "entity": "light.tuin_overkapping_level"
                                 }
                             ],
+                            "title": "Licht begane grond",
                             "type": "glance"
                         },
                         {
@@ -88,6 +106,18 @@
                             "type": "light"
                         },
                         {
+                            "entity": "light.woonkamer_piano_1",
+                            "type": "light"
+                        },
+                        {
+                            "entity": "light.woonkamer_piano_2",
+                            "type": "light"
+                        },
+                        {
+                            "entity": "light.woonkamer_piano_3",
+                            "type": "light"
+                        },
+                        {
                             "entity": "sensor.lightlevel_12",
                             "graph": "line",
                             "name": "Licht overkapping",
@@ -108,6 +138,11 @@
                         {
                             "entity": "sensor.mi_magic_cube",
                             "name": "Mi Magic Cube latest action",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.tradfri_remote_control",
+                            "name": "Latest Tradfri remote control action",
                             "type": "sensor"
                         },
                         {
