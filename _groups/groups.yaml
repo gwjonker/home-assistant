@@ -14,3 +14,13 @@ woonkamer_piano:
     - light.woonkamer_piano_1    
     - light.woonkamer_piano_2    
     - light.woonkamer_piano_3
+
+jonkertjes:
+  name: Jonkertjes
+  entities:
+    - device_tracker.gerwin
+    - device_tracker.gerrie
+    - device_tracker.hanneke      
+    - device_tracker.hinke
+    - device_tracker.jonathan
+    - device_tracker.naomi
