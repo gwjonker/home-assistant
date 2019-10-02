@@ -20,6 +20,11 @@
       data:
         entity_id: timer.motion_carport
         duration: "00:00:10"
+    - service: persistent_notification.create
+      data_template:
+        message: "Beweging onder carport gedetecteerd."
+        title: "Beweging gedetecteerd"
+
 
 - alias: Carport motion detected ended
   trigger:
