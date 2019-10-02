@@ -1,25 +1,33 @@
-# Zet licht aan 's avonds
-- alias: Licht (gedimd) aan half uur voor zonsondergang
-  trigger:
-    event: sunset
-    offset: -0:30
-    platform: sun
+# Licht aan als donker OF sunset
+- alias: Scene gedimd als donker OF half uur voor sunset
+  trigger:  
+    - platform: sun
+      event: sunset
+      offset: -0:30
+    - platform: numeric_state
+      entity_id: sensor.lightlevel_8
+      below: 15
+      for: "00:00:30"
   condition: []
   action:
     service: scene.turn_on
     entity_id: scene.gedimd
 
-- alias: Licht (minder gedimd) bij zonsondergang
+- alias: Scene conversatie als donker OF sunset
   trigger:
-    event: sunset
-    offset: -0:00
-    platform: sun
+    - platform: sun
+      event: sunset
+      offset: 0:00
+    - platform: numeric_state
+      entity_id: sensor.lightlevel_8
+      below: 5
+      for: "00:00:30"
   condition: []
   action:
     service: scene.turn_on
     entity_id: scene.conversatie
 
-# Dim lichten als TV aangezet (via Chromecast)
+# Dim licht als TV aangezet (via Chromecast)
 - alias: "Dim lichten als TV aangezet"
   trigger:
     - platform: state
@@ -37,16 +45,3 @@
       data_template:
         message: "Scene film geactiveerd. Trigger: lichten in woonkamer aan, TV aangezet"
         title: "TV aangezet"
-
-
-# Licht aan als minder dan 10 lux in woonkamer
-# - alias: Licht aan als minder dan 15 lux in woonkamer
-#   trigger:
-#     platform: numeric_state
-#     entity_id: sensor.lightlevel_8
-#     below: 15
-#     for: "00:01:00"
-#   condition: 
-#   action:
-#     service: scene.turn_on
-#     entity_id: scene.film
