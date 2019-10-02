@@ -4,16 +4,33 @@
   entities:
     light.woonkamer_linksvoor_level:
       state: true
+      brightness_pct: 20
+    light.woonkamer_rechtsvoor_level:
+      state: true
+      brightness_pct: 20
+    light.woonkamer_tv: false
+    light.woonkamer_bureau: false
+    group.woonkamer_piano: 
+      state: true
+      brightness_pct: 5
+
+- name: Gedimd
+  entities:
+    light.woonkamer_linksvoor_level:
+      state: true
       brightness_pct: 35
     light.woonkamer_rechtsvoor_level:
       state: true
       brightness_pct: 35
-    light.tuin_overkapping_level:
+    light.woonkamer_tv: 
       state: true
       brightness_pct: 35
-    light.woonkamer_tv: false
-    light.woonkamer_bureau: false
-    group.woonkamer_piano: false
+    light.woonkamer_bureau:
+      state: true
+      brightness_pct: 35
+    group.woonkamer_piano: 
+      state: true
+      brightness_pct: 35
 
 
 - name: Conversatie
@@ -24,16 +41,15 @@
     light.woonkamer_rechtsvoor_level:
       state: true
       brightness_pct: 45
-    light.tuin_overkapping_level:
-      state: true
-      brightness_pct: 35
     light.woonkamer_tv:
       state: true
-      brightness_pct: 40
-    light.woonkamer_bureau: false
+      brightness_pct: 45
+    light.woonkamer_bureau: 
+      state: true
+      brightness_pct: 45
     group.woonkamer_piano: 
       state: true
-      brightness_pct: 35
+      brightness_pct: 45
 
 
 
