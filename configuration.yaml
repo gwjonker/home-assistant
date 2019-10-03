@@ -107,6 +107,10 @@ input_boolean:
     name: Melden beweging carport
     initial: "off"
     icon: mdi:motion-sensor
+  sleeping:
+    name: Jonkertjes slapen
+    initial: "off"
+    icon: mdi:sleep
 
 # Numbers / no longer in use / for example
 input_number:
