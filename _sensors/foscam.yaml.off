@@ -1,0 +1,12 @@
+- platform: command_line
+  name: "camera carport motion"
+  command: 'curl -k --silent "http://192.168.2.15:88/cgi-bin/CGIProxy.fcgi?cmd=getDevState&usr=gwjonker&pwd=Jonkertjes18" | grep -o "(?<=motionDetectAlarm>).*?(?=</motionDetectAlarm>)"'
+  value_template: >-
+    {%- if value == "0" -%}
+      Disabled
+    {%- elif value == "1" -%}
+      None
+    {%- elif value == "2" -%}
+      Detected
+    {%- endif -%}
+  scan_interval: 3

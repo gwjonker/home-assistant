@@ -22,49 +22,54 @@
   action:
     - service: light.turn_off
       entity_id: group.woonkamer
+    - service: scene.turn_on
+      entity_id: scene.nachtstand_boven
     - service: persistent_notification.create
       data_template:
         message: "Indicatie Jonkertjes slapen aangezet. Lampen in de group.woonkamer worden uitgezet."
         title: "Jonkertjes gaan slapen"
 
 
-# Licht aan als donker OF sunset
-- alias: Scene gedimd als donker OF half uur voor sunset
-  trigger:  
-    - platform: sun
-      event: sunset
-      offset: -0:30
-    - platform: numeric_state
-      entity_id: sensor.lightlevel_8
-      below: 25
-      above: 4
-      for: "00:00:30"
-  condition: 
-    - condition: state
-      entity_id: group.jonkertjes
-      state: "home"
-    - condition: state
-      entity_id: input_boolean.sleeping
-      state: 'off'
-  action:
-    - service: scene.turn_on
-      entity_id: scene.gedimd
-    - service: persistent_notification.create
-      data_template:
-        message: "Scene Gedimd geactiveerd. 
-        Trigger: half uur voor sunset {{ states.sun.sun.state }} OF lux {{ states.sensor.lightlevel_8.state }} tussen 4 en 25, iemand van Jonkertjes thuis, Jonkertjes slapen niet"
-        title: "Licht aangepast"
+# # Licht aan als donker OF sunset
+# - alias: Scene gedimd als donker OF half uur voor sunset
+#   trigger:  
+#     - platform: sun
+#       event: sunset
+#       offset: -0:30
+#     - platform: numeric_state
+#       entity_id: sensor.lightlevel_8
+#       below: 25
+#       above: 4
+#       for: "00:00:30"
+#   condition: 
+#     - condition: state
+#       entity_id: group.jonkertjes
+#       state: "home"
+#     - condition: state
+#       entity_id: input_boolean.sleeping
+#       state: 'off'
+#   action:
+#     - service: scene.turn_on
+#       entity_id: scene.gedimd
+#     - service: persistent_notification.create
+#       data_template:
+#         message: "Scene Gedimd geactiveerd. 
+#         Trigger: half uur voor sunset {{ states.sun.sun.state }} OF lux {{ states.sensor.lightlevel_8.state }} tussen 4 en 25, iemand van Jonkertjes thuis, Jonkertjes slapen niet"
+#         title: "Licht aangepast"
 
 
 - alias: Scene conversatie als donker OF sunset
   trigger:
-    - platform: sun
-      event: sunset
-      offset: 0:00
-    - platform: numeric_state
-      entity_id: sensor.lightlevel_8
-      below: 5
-      for: "00:00:30"
+    - platform: state
+      entity_id: binary_sensor.presence_9
+      to: 'on'
+    # - platform: sun
+    #   event: sunset
+    #   offset: 0:00
+    # - platform: numeric_state
+    #   entity_id: sensor.lightlevel_8
+    #   below: 25
+    #   for: "00:00:10"
   condition: 
     - condition: state
       entity_id: group.jonkertjes
@@ -72,13 +77,16 @@
     - condition: state
       entity_id: input_boolean.sleeping
       state: 'off'
+    - condition: state
+      entity_id: group.woonkamer
+      state: 'off'            # only if lights not already on (i.e. manual selected scene)
   action:
     - service: scene.turn_on
       entity_id: scene.conversatie
     - service: persistent_notification.create
       data_template:
         message: "Scene Conversatie geactiveerd. 
-        Trigger: sunset {{ states.sun.sun.state }} OF lux {{ states.sensor.lightlevel_8.state }} lager dan 5, iemand van Jonkertjes thuis, Jonkertjes slapen niet"
+        Trigger: sunset {{ states.sun.sun.state }} OF lux {{ states.sensor.lightlevel_8.state }} lager dan 25, iemand van Jonkertjes thuis, Jonkertjes slapen niet"
         title: "Licht aangepast"
   
 

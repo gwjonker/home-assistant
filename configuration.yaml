@@ -109,7 +109,7 @@ input_boolean:
     icon: mdi:motion-sensor
   sleeping:
     name: Jonkertjes slapen
-    initial: "off"
+    initial: "on"
     icon: mdi:sleep
 
 # Numbers / no longer in use / for example

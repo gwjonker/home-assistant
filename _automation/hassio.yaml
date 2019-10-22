@@ -22,11 +22,11 @@
 - alias: Restart Home Assistant every night so presence detection via ping keeps working
   trigger:
     - platform: time
-      at: "00:00:00"
+      at: "05:00:00"
   action:
     - service: persistent_notification.create
       data_template:
         message: "Home Assistant wordt opnieuw gestart. Dit is nodig omdat anders de presence detectie via ping niet blijft werken."
         title: "Herstart Home Assistant"
-    - delay: 0:30 #so notify can be send before restart
+    - delay: 0:00:30 #so notify can be send before restart
     - service: homeassistant.restart

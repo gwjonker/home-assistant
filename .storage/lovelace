@@ -6,12 +6,21 @@
             "views": [
                 {
                     "badges": [
+                        "group.jonkertjes",
                         "sensor.temp_woonkamer",
                         "sensor.temp_overloop",
                         "sensor.temp_zolder",
                         "sensor.temp_overkapping"
                     ],
                     "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.sleeping"
+                                }
+                            ],
+                            "type": "entities"
+                        },
                         {
                             "entity": "group.woonkamer",
                             "hold_action": {
@@ -58,6 +67,9 @@
                             "entities": [
                                 {
                                     "entity": "scene.film"
+                                },
+                                {
+                                    "entity": "scene.gedimd"
                                 },
                                 {
                                     "entity": "scene.conversatie"
@@ -157,12 +169,14 @@
                 },
                 {
                     "badges": [
+                        "group.jonkertjes",
                         "device_tracker.gerwin",
                         "device_tracker.gerrie",
                         "device_tracker.hanneke",
                         "device_tracker.hinke",
                         "device_tracker.jonathan",
-                        "device_tracker.naomi"
+                        "device_tracker.naomi",
+                        "camera.carport"
                     ],
                     "cards": [
                         {

@@ -2,9 +2,10 @@
   track_new_devices: False
   consider_home: 180
   hosts:
-    gerwin: 192.168.2.19
-    gerrie: 192.168.2.25
-    hanneke: 192.168.2.27
-    hinke: 192.168.2.3
-    jonathan: 192.168.2.12
-    naomi: 192.168.2.5
+    gerwin: 192.168.1.215
+    gerrie: 192.168.1.213
+    hanneke: 192.168.1.179
+    hinke: 192.168.1.219
+    jonathan: 192.168.1.82
+    naomi: 192.168.1.49
+    carport_cam: 192.168.1.84

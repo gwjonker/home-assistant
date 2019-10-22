@@ -13,6 +13,7 @@
     group.woonkamer_piano: 
       state: true
       brightness_pct: 5
+    light.tuin_overkapping_level: false
 
 - name: Gedimd
   entities:
@@ -29,6 +30,9 @@
       state: true
       brightness_pct: 35
     group.woonkamer_piano: 
+      state: true
+      brightness_pct: 35
+    light.tuin_overkapping_level:
       state: true
       brightness_pct: 35
 
@@ -50,6 +54,9 @@
     group.woonkamer_piano: 
       state: true
       brightness_pct: 45
+    light.tuin_overkapping_level:
+      state: true
+      brightness_pct: 35
 
 
 
@@ -97,3 +104,8 @@
       state: true
       brightness_pct: 100
 
+- name: Nachtstand_boven
+  entities:
+    light.light_overloop:
+      state: true
+      brightness_pct: 5

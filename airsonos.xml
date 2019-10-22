@@ -21,6 +21,12 @@
 <raop_log>info</raop_log>
 <log_limit>-1</log_limit>
 <device>
+<udn>uuid:02858413-1943-2000-0000-6045bda26212</udn>
+<name>Xbox 360+</name>
+<mac>bb:bb:bd:a2:62:12</mac>
+<enabled>1</enabled>
+</device>
+<device>
 <udn>uuid:RINCON_5CAAFD0888F601400</udn>
 <name>woonkamer+</name>
 <mac>bb:bb:fd:08:88:f6</mac>
