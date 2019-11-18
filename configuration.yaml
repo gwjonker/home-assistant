@@ -21,10 +21,10 @@ homeassistant:
 group: !include_dir_merge_named _groups/
 scene: !include_dir_merge_list _scenes/
 automation: !include_dir_merge_list _automation/
-script: !include_dir_merge_list _scripts/
+script: !include_dir_merge_named _scripts/
 sensor: !include_dir_merge_list _sensors/
 device_tracker: !include_dir_merge_list _trackers/
-shell_command: !include_dir_merge_list _shell_commands/
+shell_command: !include_dir_merge_named _shell_commands/
 
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
@@ -127,6 +127,16 @@ input_number:
     min: 0
     max: 1000
 
+# Selectors
+input_select:
+  test:
+    name: Testselector
+    options:
+      - Start
+      - Stop
+      - Pause
+    initial: 'Stop'
+
 # Timers
 timer:
   motion_carport:
@@ -170,3 +180,9 @@ influxdb:
   password: !secret influxdb_password
   max_retries: 3
   default_measurement: state
+
+tuya:
+  username: !secret tuya_username 
+  password: !secret tuya_password
+  country_code: 31
+  platform: smart_life

@@ -1,0 +1,5 @@
+# test script
+shell_execute:
+  sequence:
+    - service: shell_command.delete_old_snapshots
+    

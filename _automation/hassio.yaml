@@ -30,3 +30,4 @@
         title: "Herstart Home Assistant"
     - delay: 0:00:30 #so notify can be send before restart
     - service: homeassistant.restart
+

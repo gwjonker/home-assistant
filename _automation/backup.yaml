@@ -2,7 +2,7 @@
 - alias: "Daily partial snapshot backup"
   trigger:
     platform: time
-    at: "03:00:00"
+    at: "03:05:00"
   action:
     - service: hassio.snapshot_partial
       data_template:
@@ -34,7 +34,7 @@
 - alias: "Copy backup folder to Dropbox"
   trigger:
     platform: time
-    at: "05:00:00"
+    at: "04:30:00"
   action:
     - service: hassio.addon_stdin
       data_template:
@@ -51,7 +51,7 @@
 - alias: Cleanup backup-folder and carportcam shots
   trigger:
     platform: time
-    at: "04:30:00"
+    at: "04:00:00"
   action:
     - service: shell_command.delete_old_snapshots
     - service: persistent_notification.create

@@ -1,0 +1,21 @@
+flash_light:
+  sequence:
+    - service: home_assistant.turn_on
+      data:
+        entity_id: light.woonkamer_piano_2
+    - delay:
+        seconds: 1
+    - service: home_assistant.turn_off
+      data:
+        entity_id: light.woonkamer_piano_2
+    - service: script.turn_on
+      data:
+        entity_id: script.flash_loop
+
+flash_loop:
+  sequence:
+    - delay: 
+        seconds: 1
+    - service: script.turn_on
+      data:
+        entity_id: script.flash_light

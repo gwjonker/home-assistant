@@ -1,0 +1,42 @@
+- alias: Carport motion detected
+  trigger:
+    platform: event
+    event_type: folder_watcher
+    event_data:
+      event_type: created
+  condition:
+    - condition: state
+      entity_id: input_boolean.motion_carport_on
+      state: 'off'
+  action:
+    - service: mqtt.publish
+      data:
+        topic: "homeassistant/carport/motion"
+        payload: "Gedetecteerd"
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.motion_carport_on
+    - service: timer.start
+      data:
+        entity_id: timer.motion_carport
+        duration: "00:00:30"
+    - service: persistent_notification.create
+      data_template:
+        message: "Beweging onder carport gedetecteerd."
+        title: "Beweging gedetecteerd"
+
+
+- alias: Carport motion detected ended
+  trigger:
+    platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.motion_carport
+  action:
+    - service: mqtt.publish
+      data:
+        topic: "homeassistant/carport/motion"
+        payload: "Niet gedetecteerd"
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.motion_carport_on

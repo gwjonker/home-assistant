@@ -29,48 +29,16 @@
         message: "Indicatie Jonkertjes slapen aangezet. Lampen in de group.woonkamer worden uitgezet."
         title: "Jonkertjes gaan slapen"
 
-
-# # Licht aan als donker OF sunset
-# - alias: Scene gedimd als donker OF half uur voor sunset
-#   trigger:  
-#     - platform: sun
-#       event: sunset
-#       offset: -0:30
-#     - platform: numeric_state
-#       entity_id: sensor.lightlevel_8
-#       below: 25
-#       above: 4
-#       for: "00:00:30"
-#   condition: 
-#     - condition: state
-#       entity_id: group.jonkertjes
-#       state: "home"
-#     - condition: state
-#       entity_id: input_boolean.sleeping
-#       state: 'off'
-#   action:
-#     - service: scene.turn_on
-#       entity_id: scene.gedimd
-#     - service: persistent_notification.create
-#       data_template:
-#         message: "Scene Gedimd geactiveerd. 
-#         Trigger: half uur voor sunset {{ states.sun.sun.state }} OF lux {{ states.sensor.lightlevel_8.state }} tussen 4 en 25, iemand van Jonkertjes thuis, Jonkertjes slapen niet"
-#         title: "Licht aangepast"
-
-
-- alias: Scene conversatie als donker OF sunset
+# Zet lichten aan als beweging en donker in de woonkamer
+- alias: Scene conversatie als donker EN beweging in woonkamer
   trigger:
     - platform: state
       entity_id: binary_sensor.presence_9
       to: 'on'
-    # - platform: sun
-    #   event: sunset
-    #   offset: 0:00
-    # - platform: numeric_state
-    #   entity_id: sensor.lightlevel_8
-    #   below: 25
-    #   for: "00:00:10"
   condition: 
+    - condition: numeric_state
+      entity_id: sensor.lightlevel_8
+      below: 10 
     - condition: state
       entity_id: group.jonkertjes
       state: "home"
@@ -86,25 +54,62 @@
     - service: persistent_notification.create
       data_template:
         message: "Scene Conversatie geactiveerd. 
-        Trigger: sunset {{ states.sun.sun.state }} OF lux {{ states.sensor.lightlevel_8.state }} lager dan 25, iemand van Jonkertjes thuis, Jonkertjes slapen niet"
+        Trigger: Beweging in de woonkamer EN lux {{ states.sensor.lightlevel_8.state }} is lager dan 10 EN iemand van Jonkertjes thuis EN Jonkertjes slapen niet"
         title: "Licht aangepast"
   
 
-# Dim licht als TV aangezet (via Chromecast)
-- alias: "Dim lichten als TV aangezet"
+# Zet lichten uit als weer lichter
+- alias: Zet lichten uit als licht genoeg in de woonkamer
   trigger:
-    - platform: state
-      entity_id: media_player.chromecast_jonkertjes
-      from: "unavailable"
-      to: "off"
-  condition:
+    - platform: numeric_state
+      entity_id: sensor.lightlevel_8
+      above: 10
+  condition: 
     - condition: state
       entity_id: group.woonkamer
-      state: "on"
+      state: 'on'     
+    - condition: numeric_state
+      entity_id: sensor.lightlevel_12
+      above: 120      
   action:
-    - service: scene.turn_on
-      entity_id: scene.film
+    - service: light.turn_off
+      entity_id: group.woonkamer
     - service: persistent_notification.create
       data_template:
-        message: "Scene film geactiveerd. Trigger: lichten in woonkamer aan, TV aangezet"
-        title: "TV aangezet"
+        message: "Lichten in woonkamer uitgezet. Trigger: lux {{ states.sensor.lightlevel_8.state }} woonkamer is groter dan 10 EN lux {{ states.sensor.lightlevel_12.state }} woonkamer is groter dan 120"
+        title: "Lichten uitgezet"
+ 
+# dim overlooplicht als aangezet
+- alias: Dim overlooplicht als aangezet
+  trigger:
+    - platform: state
+      entity_id: light.light_overloop
+      from: "unavailable"   
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.light_overloop
+        brightness_pct: 50     
+
+# # Dim licht als TV aangezet (via Chromecast)
+# - alias: "Dim lichten als TV aangezet"
+#   trigger:
+#     - platform: state
+#       entity_id: media_player.chromecast_jonkertjes
+#       from: "unavailable"
+#       to: "off"
+#       for:
+#         hours: 0
+#         minutes: 2
+#         seconds: 0
+#   condition:
+#     - condition: state
+#       entity_id: group.woonkamer
+#       state: "on"
+#   action:
+#     - service: scene.turn_on
+#       entity_id: scene.film
+#     - service: persistent_notification.create
+#       data_template:
+#         message: "Scene film geactiveerd. Trigger: lichten in woonkamer aan, TV aangezet"
+#         title: "TV aangezet"
