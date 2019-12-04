@@ -29,6 +29,31 @@
         message: Creating partial backup named "Automated Partial Backup {{ now().strftime('%Y-%m-%d') }}"
         title: "Back up"
 
+# Cleanup old folders
+- alias: Cleanup backup-folder and carportcam shots
+  trigger:
+    platform: time
+    at: "04:00:00"
+  action:
+    - service: persistent_notification.create
+      data_template:
+        message: "Delete old camport snapshots pre: disk usage = {{ states.sensor.disk_use_percent.state }}%, disk free = {{ states.sensor.disk_free.state }} Gb"
+        title: "Cleanup"
+    - service: shell_command.delete_old_camsnap
+    - service: persistent_notification.create
+      data_template:
+        message: "Delete old camport snapshots post: disk usage = {{ states.sensor.disk_use_percent.state }}%, disk free = {{ states.sensor.disk_free.state }} Gb"
+        title: "Cleanup"
+
+    - service: persistent_notification.create
+      data_template:
+        message: "Delete old camport videos pre: disk usage = {{ states.sensor.disk_use_percent.state }}%, disk free = {{ states.sensor.disk_free.state }} Gb"
+        title: "Cleanup"
+    - service: shell_command.delete_old_camrecord
+    - service: persistent_notification.create
+      data_template:
+        message: "Delete old camport videos post: disk usage = {{ states.sensor.disk_use_percent.state }}%, disk free = {{ states.sensor.disk_free.state }} Gb"
+        title: "Cleanup"
 
 # Copy backup folder to Dropbox
 - alias: "Copy backup folder to Dropbox"
@@ -46,25 +71,3 @@
       data_template:
         message: "Copying backup folder to Dropbox ({{ now().strftime('%Y-%m-%d') }} )"
         title: "Back up"
-
-# Cleanup old folders
-- alias: Cleanup backup-folder and carportcam shots
-  trigger:
-    platform: time
-    at: "04:00:00"
-  action:
-    - service: shell_command.delete_old_snapshots
-    - service: persistent_notification.create
-      data_template:
-        message: "Delete old backups ({{ now().strftime('%Y-%m-%d') }} )"
-        title: "Cleanup"
-    - service: shell_command.delete_old_camsnap
-    - service: persistent_notification.create
-      data_template:
-        message: "Delete old camport snapshots ({{ now().strftime('%Y-%m-%d') }} )"
-        title: "Cleanup"
-    - service: shell_command.delete_old_camrecord
-    - service: persistent_notification.create
-      data_template:
-        message: "Delete old camport videos ({{ now().strftime('%Y-%m-%d') }} )"
-        title: "Cleanup"

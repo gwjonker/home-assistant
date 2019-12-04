@@ -1,18 +1,13 @@
-# - alias: test_an_automation
-#   trigger:
-#   - platform: state
-#     entity_id: input_select.test
-#     to: 'Start'
-#   action:
-    # - service: script.shell_execute
-    # - service: persistent_notification.create
-    #   data_template:
-    #     message: "Trigger: testselector op Start gezet. Shell_execute uitgevoerd"
-    #     title: "Test an automation"
-    # - service: light.turn_on
-    #   data:
-    #     entity_id: light.woonkamer_piano_2
-    #     brightness_pct: 100
-    #     flash: long
+- alias: test_an_automation
+  trigger:
+    - platform: state
+      entity_id: input_select.test
+      to: 'Start'
+  action:
+    - service: shell_command.delete_old_camsnap
+    - service: persistent_notification.create
+      data_template:
+        message: "Trigger: testselector op Start gezet. Shell_execute uitgevoerd"
+        title: "Test an automation"
 
 
