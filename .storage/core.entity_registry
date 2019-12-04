@@ -240,7 +240,7 @@
                 "device_id": "1841aba8f1c84d0f80b6aa3990c84cb5",
                 "disabled_by": null,
                 "entity_id": "light.woonkamer_linksvoor_level",
-                "name": "Woonkamer linksvoor dimmer",
+                "name": "Woonkamer lv",
                 "platform": "zwave",
                 "unique_id": "5-72057594126630913"
             },
@@ -249,7 +249,7 @@
                 "device_id": "bb5c62df9e7b47fbbdd072d0c3186e3e",
                 "disabled_by": null,
                 "entity_id": "light.woonkamer_rechtsvoor_level",
-                "name": "Woonkamer rechtsvoor dimmer",
+                "name": "Woonkamer rv",
                 "platform": "zwave",
                 "unique_id": "7-72057594160185345"
             },
@@ -258,7 +258,7 @@
                 "device_id": "b4739c514a1d4a3898f041d4a5fa7294",
                 "disabled_by": null,
                 "entity_id": "light.tuin_overkapping_level",
-                "name": "Overkapping dimmer",
+                "name": "Overkapping",
                 "platform": "zwave",
                 "unique_id": "6-72057594143408129"
             },
@@ -834,7 +834,7 @@
                 "device_id": "a383105121b44113a1c2a21d934dc6c9",
                 "disabled_by": null,
                 "entity_id": "light.light_overloop",
-                "name": null,
+                "name": "Overloop",
                 "platform": "deconz",
                 "unique_id": "00:17:88:01:04:b9:84:fe-0b"
             },
@@ -936,6 +936,51 @@
                 "name": null,
                 "platform": "deconz",
                 "unique_id": "08:6b:d7:ff:fe:2d:08:6a-01"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.kantoor",
+                "name": "Kantoor",
+                "platform": "tuya",
+                "unique_id": "tuya.bf88d2ab27cb47da8ffqzd"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.jonathan",
+                "name": "Jonathan",
+                "platform": "tuya",
+                "unique_id": "tuya.bfb6b14e56ef8fccc7qy4n"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.naomi01",
+                "name": "Naomi 1",
+                "platform": "tuya",
+                "unique_id": "tuya.bf9d00d41ab6b722f2mouo"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.naomi02",
+                "name": "Naomi 2",
+                "platform": "tuya",
+                "unique_id": "tuya.bfc6a12f6e9f38ab28cj8y"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.zolder",
+                "name": "Zolder",
+                "platform": "tuya",
+                "unique_id": "tuya.bfbd31e36530902d120i1w"
             }
         ]
     },

@@ -1,0 +1,40 @@
+# dim overlooplicht als aangezet OVERDAG
+- alias: Dim overlooplicht als aangezet
+  trigger:
+    - platform: state
+      entity_id: light.light_overloop
+      from: "unavailable" 
+  condition: 
+    condition: time
+    after: '07:00:00'
+    before: '21:30:01'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.light_overloop
+        brightness_pct: 50     
+    - service: persistent_notification.create
+      data_template:
+        message: "Overlooplicht was uit en is aangezet. Gedimd naar 50% omdat overdag"
+        title: "Overlooplicht"
+
+# dim overlooplicht als aangezet 'S NACHTS'
+- alias: Dim overlooplicht als aangezet
+  trigger:
+    - platform: state
+      entity_id: light.light_overloop
+      from: "unavailable" 
+  condition: 
+    condition: time
+    before: '07:00:01'
+    after: '21:30:00'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.light_overloop
+        brightness_pct: 5
+    - service: persistent_notification.create
+      data_template:
+        message: "Overlooplicht was uit en is aangezet. Gedimd naar 5% omdat in de nacht"
+        title: "Overlooplicht"
+     

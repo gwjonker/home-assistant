@@ -10,7 +10,8 @@
                         "sensor.temp_woonkamer",
                         "sensor.temp_overloop",
                         "sensor.temp_zolder",
-                        "sensor.temp_overkapping"
+                        "sensor.temp_overkapping",
+                        "sensor.disk_use_percent"
                     ],
                     "cards": [
                         {
@@ -19,6 +20,31 @@
                                     "entity": "input_boolean.sleeping"
                                 }
                             ],
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "scene.film"
+                                },
+                                {
+                                    "entity": "scene.gedimd"
+                                },
+                                {
+                                    "entity": "scene.conversatie"
+                                },
+                                {
+                                    "entity": "scene.verjaardag"
+                                },
+                                {
+                                    "entity": "scene.maximaal"
+                                },
+                                {
+                                    "entity": "group.woonkamer"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Kies een scene",
                             "type": "entities"
                         },
                         {
@@ -54,9 +80,6 @@
                                     "entity": "light.woonkamer_bureau"
                                 },
                                 {
-                                    "entity": "light.light_overloop"
-                                },
-                                {
                                     "entity": "light.tuin_overkapping_level"
                                 }
                             ],
@@ -66,68 +89,29 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "scene.film"
+                                    "entity": "light.light_overloop"
                                 },
                                 {
-                                    "entity": "scene.gedimd"
-                                },
-                                {
-                                    "entity": "scene.conversatie"
-                                },
-                                {
-                                    "entity": "scene.verjaardag"
-                                },
-                                {
-                                    "entity": "scene.maximaal"
-                                },
-                                {
-                                    "entity": "group.woonkamer"
+                                    "entity": "light.jonathan"
                                 }
                             ],
-                            "show_header_toggle": false,
-                            "title": "Kies een scene",
+                            "title": "Licht 1e verdieping",
                             "type": "entities"
                         },
                         {
-                            "entity": "light.tuin_overkapping_level",
-                            "name": "Overkapping",
-                            "type": "light"
-                        },
-                        {
-                            "entity": "light.woonkamer_linksvoor_level",
-                            "name": "Woonkamer linksvoor",
-                            "type": "light"
-                        },
-                        {
-                            "entity": "light.light_overloop",
-                            "name": "Licht overloop",
-                            "type": "light"
-                        },
-                        {
-                            "entity": "light.woonkamer_rechtsvoor_level",
-                            "name": "Woonkamer rechtsvoor",
-                            "type": "light"
-                        },
-                        {
-                            "entity": "light.woonkamer_tv",
-                            "name": "Woonkamer TV",
-                            "type": "light"
-                        },
-                        {
-                            "entity": "light.woonkamer_bureau",
-                            "type": "light"
-                        },
-                        {
-                            "entity": "light.woonkamer_piano_1",
-                            "type": "light"
-                        },
-                        {
-                            "entity": "light.woonkamer_piano_2",
-                            "type": "light"
-                        },
-                        {
-                            "entity": "light.woonkamer_piano_3",
-                            "type": "light"
+                            "entities": [
+                                {
+                                    "entity": "light.zolder"
+                                },
+                                {
+                                    "entity": "light.naomi01"
+                                },
+                                {
+                                    "entity": "light.naomi02"
+                                }
+                            ],
+                            "title": "Licht zolder",
+                            "type": "entities"
                         },
                         {
                             "entity": "sensor.lightlevel_12",
@@ -145,16 +129,6 @@
                             "entity": "sensor.lightlevel_11",
                             "graph": "line",
                             "name": "Licht zolder",
-                            "type": "sensor"
-                        },
-                        {
-                            "entity": "sensor.mi_magic_cube",
-                            "name": "Mi Magic Cube latest action",
-                            "type": "sensor"
-                        },
-                        {
-                            "entity": "sensor.tradfri_remote_control",
-                            "name": "Latest Tradfri remote control action",
                             "type": "sensor"
                         },
                         {
@@ -406,6 +380,63 @@
                             "show_header_toggle": false,
                             "title": "Zigbee batterijen",
                             "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_select.test"
+                                }
+                            ],
+                            "title": "Tester",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.disk_use_percent",
+                            "max": 100,
+                            "min": 0,
+                            "name": "Disk usage",
+                            "severity": {
+                                "green": 0,
+                                "red": 80,
+                                "yellow": 60
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.disk_use",
+                            "max": 32,
+                            "min": 0,
+                            "name": "Disk used",
+                            "severity": {
+                                "green": 0,
+                                "red": 26,
+                                "yellow": 20
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entities": [
+                                "sensor.memory_free",
+                                "sensor.disk_free",
+                                "sensor.disk_use_cli",
+                                "sensor.cpu_temperature",
+                                "sensor.last_boot"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "RPi",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.mi_magic_cube",
+                            "name": "Mi Magic Cube latest action",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.tradfri_remote_control",
+                            "name": "Latest Tradfri remote control action",
+                            "type": "sensor"
                         }
                     ],
                     "icon": "mdi:monitor",

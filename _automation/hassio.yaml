@@ -31,3 +31,15 @@
     - delay: 0:00:30 #so notify can be send before restart
     - service: homeassistant.restart
 
+
+# Control disk usage (influenced by camera snaps)
+- alias: Warning if disk use above 60%
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.disk_use_percent
+      above: 60
+  action:
+    - service: persistent_notification.create
+      data_template:
+        message: "Warning: disk usage is {{ states.sensor.disk_use_percent.state }}%"
+        title: "Disk usage"

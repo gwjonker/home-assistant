@@ -54,7 +54,7 @@
     - service: persistent_notification.create
       data_template:
         message: "Scene Conversatie geactiveerd. 
-        Trigger: Beweging in de woonkamer EN lux {{ states.sensor.lightlevel_8.state }} is lager dan 10 EN iemand van Jonkertjes thuis EN Jonkertjes slapen niet"
+        Trigger: Beweging in de woonkamer EN lux {{ states.sensor.lightlevel_8.state }} is lager dan 10 (lux overkapping is{{ states.sensor.lightlevel_12.state }}) EN iemand van Jonkertjes thuis EN Jonkertjes slapen niet"
         title: "Licht aangepast"
   
 
@@ -76,20 +76,9 @@
       entity_id: group.woonkamer
     - service: persistent_notification.create
       data_template:
-        message: "Lichten in woonkamer uitgezet. Trigger: lux {{ states.sensor.lightlevel_8.state }} woonkamer is groter dan 10 EN lux {{ states.sensor.lightlevel_12.state }} woonkamer is groter dan 120"
+        message: "Lichten in woonkamer uitgezet. Trigger: lux {{ states.sensor.lightlevel_8.state }} woonkamer is groter dan 10 EN lux {{ states.sensor.lightlevel_12.state }} overkapping is groter dan 120"
         title: "Lichten uitgezet"
  
-# dim overlooplicht als aangezet
-- alias: Dim overlooplicht als aangezet
-  trigger:
-    - platform: state
-      entity_id: light.light_overloop
-      from: "unavailable"   
-  action:
-    - service: light.turn_on
-      data:
-        entity_id: light.light_overloop
-        brightness_pct: 50     
 
 # # Dim licht als TV aangezet (via Chromecast)
 # - alias: "Dim lichten als TV aangezet"
