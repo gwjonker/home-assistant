@@ -1,110 +1,112 @@
-# history TODAY
-- platform: history_stats
-  name: Lampen aan vandaag
-  entity_id: light.woonkamer_rechtsvoor_level
-  state: "on"
-  type: time
-  start: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
-  end: "{{ now() }}"
+# DISABLED - leads to time-out op Rpi 3b
 
-- platform: history_stats
-  name: Wasmachine aan vandaag
-  entity_id: input_boolean.washing_machine_on
-  state: "on"
-  type: time
-  start: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
-  end: "{{ now() }}"
+# # history TODAY
+# - platform: history_stats
+#   name: Lampen aan vandaag
+#   entity_id: light.woonkamer_rechtsvoor_level
+#   state: "on"
+#   type: time
+#   start: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
+#   end: "{{ now() }}"
 
-- platform: history_stats
-  name: Droger aan vandaag
-  entity_id: input_boolean.dryer_on
-  state: "on"
-  type: time
-  start: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
-  end: "{{ now() }}"
+# - platform: history_stats
+#   name: Wasmachine aan vandaag
+#   entity_id: input_boolean.washing_machine_on
+#   state: "on"
+#   type: time
+#   start: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
+#   end: "{{ now() }}"
 
-- platform: history_stats
-  name: TV aan vandaag
-  entity_id: media_player.chromecast_jonkertjes
-  state: "on"
-  type: time
-  start: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
-  end: "{{ now() }}"
+# - platform: history_stats
+#   name: Droger aan vandaag
+#   entity_id: input_boolean.dryer_on
+#   state: "on"
+#   type: time
+#   start: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
+#   end: "{{ now() }}"
 
-# history LAST WEEK
-- platform: history_stats
-  name: Wasmachine aan deze week
-  entity_id: input_boolean.washing_machine_on
-  state: "on"
-  type: time
-  start: "{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}"
-  end: "{{ now() }}"
+# - platform: history_stats
+#   name: TV aan vandaag
+#   entity_id: media_player.chromecast_jonkertjes
+#   state: "on"
+#   type: time
+#   start: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
+#   end: "{{ now() }}"
 
-- platform: history_stats
-  name: Droger aan deze week
-  entity_id: input_boolean.dryer_on
-  state: "on"
-  type: time
-  start: "{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}"
-  end: "{{ now() }}"
+# # history LAST WEEK
+# - platform: history_stats
+#   name: Wasmachine aan deze week
+#   entity_id: input_boolean.washing_machine_on
+#   state: "on"
+#   type: time
+#   start: "{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}"
+#   end: "{{ now() }}"
 
-- platform: history_stats
-  name: TV aan deze week
-  entity_id: media_player.chromecast_jonkertjes
-  state: "on"
-  type: time
-  start: "{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}"
-  end: "{{ now() }}"
+# - platform: history_stats
+#   name: Droger aan deze week
+#   entity_id: input_boolean.dryer_on
+#   state: "on"
+#   type: time
+#   start: "{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}"
+#   end: "{{ now() }}"
 
-# history LAST 30 DAYS
-- platform: history_stats
-  name: Wasmachine aan laatste 30 dagen
-  entity_id: input_boolean.washing_machine_on
-  state: "on"
-  type: time
-  end: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
-  duration:
-    days: 30
+# - platform: history_stats
+#   name: TV aan deze week
+#   entity_id: media_player.chromecast_jonkertjes
+#   state: "on"
+#   type: time
+#   start: "{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}"
+#   end: "{{ now() }}"
 
-- platform: history_stats
-  name: Droger aan laatste 30 dagen
-  entity_id: input_boolean.dryer_on
-  state: "on"
-  type: time
-  end: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
-  duration:
-    days: 30
+# # history LAST 30 DAYS
+# - platform: history_stats
+#   name: Wasmachine aan laatste 30 dagen
+#   entity_id: input_boolean.washing_machine_on
+#   state: "on"
+#   type: time
+#   end: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
+#   duration:
+#     days: 30
 
-- platform: history_stats
-  name: TV aan laatste 30 dagen
-  entity_id: media_player.chromecast_jonkertjes
-  state: "on"
-  type: time
-  end: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
-  duration:
-    days: 30
+# - platform: history_stats
+#   name: Droger aan laatste 30 dagen
+#   entity_id: input_boolean.dryer_on
+#   state: "on"
+#   type: time
+#   end: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
+#   duration:
+#     days: 30
 
-# history FROM START
-- platform: history_stats
-  name: Wasmachine aan vanaf begin
-  entity_id: input_boolean.washing_machine_on
-  state: "on"
-  type: time
-  start: "{{ 0 }}"
-  end: "{{ now() }}"
+# - platform: history_stats
+#   name: TV aan laatste 30 dagen
+#   entity_id: media_player.chromecast_jonkertjes
+#   state: "on"
+#   type: time
+#   end: "{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}"
+#   duration:
+#     days: 30
 
-- platform: history_stats
-  name: Droger aan vanaf begin
-  entity_id: input_boolean.dryer_on
-  state: "on"
-  type: time
-  start: "{{ 0 }}"
-  end: "{{ now() }}"
+# # history FROM START
+# - platform: history_stats
+#   name: Wasmachine aan vanaf begin
+#   entity_id: input_boolean.washing_machine_on
+#   state: "on"
+#   type: time
+#   start: "{{ 0 }}"
+#   end: "{{ now() }}"
 
-- platform: history_stats
-  name: TV aan vanaf begin
-  entity_id: media_player.chromecast_jonkertjes
-  state: "on"
-  type: time
-  start: "{{ 0 }}"
-  end: "{{ now() }}"
+# - platform: history_stats
+#   name: Droger aan vanaf begin
+#   entity_id: input_boolean.dryer_on
+#   state: "on"
+#   type: time
+#   start: "{{ 0 }}"
+#   end: "{{ now() }}"
+
+# - platform: history_stats
+#   name: TV aan vanaf begin
+#   entity_id: media_player.chromecast_jonkertjes
+#   state: "on"
+#   type: time
+#   start: "{{ 0 }}"
+#   end: "{{ now() }}"
