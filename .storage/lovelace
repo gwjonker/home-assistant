@@ -6,12 +6,27 @@
             "views": [
                 {
                     "badges": [
-                        "group.jonkertjes",
-                        "sensor.temp_woonkamer",
-                        "sensor.temp_overloop",
-                        "sensor.temp_zolder",
-                        "sensor.temp_overkapping",
-                        "sensor.disk_use_percent"
+                        {
+                            "entity": "group.jonkertjes"
+                        },
+                        {
+                            "entity": "sensor.temp_woonkamer"
+                        },
+                        {
+                            "entity": "sensor.temp_overkapping"
+                        },
+                        {
+                            "entity": "sensor.disk_use_percent"
+                        },
+                        {
+                            "entity": "sensor.power_consumption"
+                        },
+                        {
+                            "entity": "sensor.hourly_gas_consumption"
+                        },
+                        {
+                            "entity": "camera.carport"
+                        }
                     ],
                     "cards": [
                         {
@@ -38,9 +53,6 @@
                                 },
                                 {
                                     "entity": "scene.maximaal"
-                                },
-                                {
-                                    "entity": "group.woonkamer"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -48,21 +60,6 @@
                             "type": "entities"
                         },
                         {
-                            "entity": "group.woonkamer",
-                            "hold_action": {
-                                "action": "more-info"
-                            },
-                            "icon": "mdi:lightbulb-outline",
-                            "name": "Alle lichten woonkamer",
-                            "show_icon": true,
-                            "show_name": true,
-                            "tap_action": {
-                                "action": "toggle"
-                            },
-                            "type": "entity-button"
-                        },
-                        {
-                            "columns": 2,
                             "entities": [
                                 {
                                     "entity": "light.woonkamer_tv"
@@ -84,7 +81,7 @@
                                 }
                             ],
                             "title": "Licht begane grond",
-                            "type": "glance"
+                            "type": "entities"
                         },
                         {
                             "entities": [
@@ -93,6 +90,9 @@
                                 },
                                 {
                                     "entity": "light.jonathan"
+                                },
+                                {
+                                    "entity": "light.kantoor"
                                 }
                             ],
                             "title": "Licht 1e verdieping",
@@ -280,12 +280,15 @@
                     "cards": [
                         {
                             "entities": [
-                                "sensor.bijkeuken_droger_energy",
-                                "sensor.bijkeuken_wasmachine_energy",
-                                "sensor.droger_aan_deze_week",
-                                "sensor.wasmachine_aan_deze_week"
+                                {
+                                    "entity": "sensor.bijkeuken_droger_energy"
+                                },
+                                {
+                                    "entity": "sensor.bijkeuken_wasmachine_energy"
+                                }
                             ],
                             "hours_to_show": 24,
+                            "refresh_interval": 0,
                             "title": "Energieverbruik (1 d)",
                             "type": "history-graph"
                         },
@@ -441,6 +444,82 @@
                     ],
                     "icon": "mdi:monitor",
                     "title": "Monitoring"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.gas_consumption"
+                                },
+                                {
+                                    "entity": "sensor.hourly_gas_consumption"
+                                },
+                                {
+                                    "entity": "sensor.long_power_failure_count"
+                                },
+                                {
+                                    "entity": "sensor.power_consumption"
+                                },
+                                {
+                                    "entity": "sensor.power_consumption_low"
+                                },
+                                {
+                                    "entity": "sensor.power_consumption_normal"
+                                },
+                                {
+                                    "entity": "sensor.power_consumption_total"
+                                },
+                                {
+                                    "entity": "sensor.power_tariff"
+                                },
+                                {
+                                    "entity": "sensor.voltage_phase_l1"
+                                },
+                                {
+                                    "entity": "sensor.voltage_sags_phase_l1"
+                                },
+                                {
+                                    "entity": "sensor.voltage_swells_phase_l1"
+                                },
+                                {
+                                    "entity": "sensor.power_consumption_calc_total"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Slimme meter",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.power_consumption",
+                            "max": 5,
+                            "min": 0,
+                            "name": "Stroomverbruik",
+                            "severity": {
+                                "green": 2,
+                                "red": 4,
+                                "yellow": 3
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.hourly_gas_consumption",
+                            "max": 2.5,
+                            "min": 0,
+                            "name": "Gasverbruik/uur/5m",
+                            "severity": {
+                                "green": 0,
+                                "red": 1.5,
+                                "yellow": 1
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        }
+                    ],
+                    "path": "slimme-meter",
+                    "title": "Slimme meter"
                 }
             ]
         }

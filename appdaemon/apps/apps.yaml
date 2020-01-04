@@ -11,56 +11,56 @@ tradfri_remote_control:
   module: tradfri_remote_control
   class: TradfriRemoteControl
 
-turn_off_lights_woonkamer:
-  module: remoting_lights
-  class: TurnOffLight
-  lights:
-    - light.woonkamer_rechtsvoor_level
-    - light.woonkamer_linksvoor_level
-    - light.tuin_overkapping_level
-    - light.woonkamer_tv
-    - light.woonkamer_bureau
+# turn_off_lights_woonkamer:
+#   module: remoting_lights
+#   class: TurnOffLight
+#   lights:
+#     - light.woonkamer_rechtsvoor_level
+#     - light.woonkamer_linksvoor_level
+#     - light.tuin_overkapping_level
+#     - light.woonkamer_tv
+#     - light.woonkamer_bureau
 
-turn_on_lights_woonkamer:
-  module: remoting_lights
-  class: TurnOnLight
-  scene: scene.conversatie
-  lights:
-    - light.woonkamer_rechtsvoor_level
-    - light.woonkamer_linksvoor_level
-    - light.tuin_overkapping_level
-    - light.woonkamer_tv
-    - light.woonkamer_bureau
+# turn_on_lights_woonkamer:
+#   module: remoting_lights
+#   class: TurnOnLight
+#   scene: scene.conversatie
+#   lights:
+#     - light.woonkamer_rechtsvoor_level
+#     - light.woonkamer_linksvoor_level
+#     - light.tuin_overkapping_level
+#     - light.woonkamer_tv
+#     - light.woonkamer_bureau
 
-toggle_lights_woonkamer:
-  module: remoting_lights
-  class: ToggleLight
-  lights:
-    - group.woonkamer
-    # - light.woonkamer_rechtsvoor_level
-    # - light.woonkamer_linksvoor_level
-    # - light.tuin_overkapping_level
-    # - light.woonkamer_tv
-    # - light.woonkamer_bureau
+# toggle_lights_woonkamer:
+#   module: remoting_lights
+#   class: ToggleLight
+#   lights:
+#     - group.woonkamer
+#     # - light.woonkamer_rechtsvoor_level
+#     # - light.woonkamer_linksvoor_level
+#     # - light.tuin_overkapping_level
+#     # - light.woonkamer_tv
+#     # - light.woonkamer_bureau
 
-inc_brightness_lights_woonkamer:
-  module: remoting_lights
-  class: IncreaseBrightnessLight
-  step: 40
-  lights:
-    - group.woonkamer
-    # - light.woonkamer_rechtsvoor_level
-    # - light.woonkamer_linksvoor_level
-    # - light.tuin_overkapping_level
-    # - light.woonkamer_tv
-    # - light.woonkamer_bureau
+# inc_brightness_lights_woonkamer:
+#   module: remoting_lights
+#   class: IncreaseBrightnessLight
+#   step: 40
+#   lights:
+#     - group.woonkamer
+#     # - light.woonkamer_rechtsvoor_level
+#     # - light.woonkamer_linksvoor_level
+#     # - light.tuin_overkapping_level
+#     # - light.woonkamer_tv
+#     # - light.woonkamer_bureau
  
-dec_brightness_lights_woonkamer:
-  module: remoting_lights
-  class: DecreaseBrightnessLight
-  step: 40
-  lights:
-    - group.woonkamer
+# dec_brightness_lights_woonkamer:
+#   module: remoting_lights
+#   class: DecreaseBrightnessLight
+#   step: 40
+#   lights:
+#     - group.woonkamer
     # - light.woonkamer_rechtsvoor_level
     # - light.woonkamer_linksvoor_level
     # - light.tuin_overkapping_level

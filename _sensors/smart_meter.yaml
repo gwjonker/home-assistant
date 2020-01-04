@@ -1,0 +1,10 @@
+- platform: dsmr
+  port: /dev/ttyUSB0
+  dsmr_version: 5
+
+- platform: template
+  sensors:
+    power_consumption_calc_total:
+      value_template: "{{ states.sensor.sensor.power_consumption_low + states.sensor.sensor.power_consumption_normal }}"
+      friendly_name: "Power Consumption (total)"
+      unit_of_measurement: kWh

@@ -1,0 +1,24 @@
+- platform: command_line
+  name: "Disk use (cli)"
+  command: 'df -h | grep overlay | grep -o [0-9]*% | grep -o [0-9]*'
+  unit_of_measurement: "%"
+  scan_interval: 60
+
+- platform: command_line
+  name: CPU temperature
+  command: "cat /sys/class/thermal/thermal_zone0/temp"
+  # If errors occur, make sure configuration file is encoded as UTF-8
+  unit_of_measurement: "°C"
+  value_template: '{{ value | multiply(0.001) | round(1) }}'
+
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /
+    - type: disk_use
+      arg: /
+    - type: disk_free
+      arg: /
+    - type: memory_free
+    - type: processor_use
+    - type: last_boot

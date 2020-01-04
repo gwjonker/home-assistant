@@ -78,27 +78,95 @@
       data_template:
         message: "Lichten in woonkamer uitgezet. Trigger: lux {{ states.sensor.lightlevel_8.state }} woonkamer is groter dan 10 EN lux {{ states.sensor.lightlevel_12.state }} overkapping is groter dan 120"
         title: "Lichten uitgezet"
- 
 
-# # Dim licht als TV aangezet (via Chromecast)
-# - alias: "Dim lichten als TV aangezet"
-#   trigger:
-#     - platform: state
-#       entity_id: media_player.chromecast_jonkertjes
-#       from: "unavailable"
-#       to: "off"
-#       for:
-#         hours: 0
-#         minutes: 2
-#         seconds: 0
-#   condition:
-#     - condition: state
-#       entity_id: group.woonkamer
-#       state: "on"
-#   action:
-#     - service: scene.turn_on
-#       entity_id: scene.film
-#     - service: persistent_notification.create
-#       data_template:
-#         message: "Scene film geactiveerd. Trigger: lichten in woonkamer aan, TV aangezet"
-#         title: "TV aangezet"
+# Activeer scene als op Tradfri knop gedrukt -- DOWN
+- alias: Activeer scene Film als Tradfri Down 
+  trigger:
+    - platform: state
+      entity_id: sensor.tradfri_remote_control
+      to: 'down'
+  action:
+    - service: scene.turn_on
+      entity_id: scene.film
+    - service: persistent_notification.create
+      data_template:
+        message: "Scene Film geactiveerd. Trigger: knop Down op Tradfri remote control."
+        title: "Scene"
+  
+# Activeer scene als op Tradfri knop gedrukt -- UP
+- alias: Activeer scene Film als Tradfri Up 
+  trigger:
+    - platform: state
+      entity_id: sensor.tradfri_remote_control
+      to: 'up'
+  action:
+    - service: scene.turn_on
+      entity_id: scene.gedimd
+    - service: persistent_notification.create
+      data_template:
+        message: "Scene Gedimd geactiveerd. Trigger: knop Up op Tradfri remote control."
+        title: "Scene"
+
+# Activeer scene als op Tradfri knop gedrukt -- NEXT
+- alias: Activeer scene Film als Tradfri Next 
+  trigger:
+    - platform: state
+      entity_id: sensor.tradfri_remote_control
+      to: 'next'
+  action:
+    - service: scene.turn_on
+      entity_id: scene.conversatie
+    - service: persistent_notification.create
+      data_template:
+        message: "Scene Conversatie geactiveerd. Trigger: knop Next op Tradfri remote control."
+        title: "Scene"
+
+# Activeer scene als op Tradfri knop gedrukt -- PREVIOUS
+- alias: Activeer scene Film als Tradfri Previous 
+  trigger:
+    - platform: state
+      entity_id: sensor.tradfri_remote_control
+      to: 'previous'
+  action:
+    - service: scene.turn_on
+      entity_id: scene.verjaardag
+    - service: persistent_notification.create
+      data_template:
+        message: "Scene Verjaardag geactiveerd. Trigger: knop Previous op Tradfri remote control."
+        title: "Scene"
+
+# Zet lichten uit als op Tradfri knop gedrukt -- TOGGLE
+- alias: Lichten woonkamer uit als Tradfri Toggle Off
+  trigger:
+    - platform: state
+      entity_id: sensor.tradfri_remote_control
+      to: 'toggle'
+  condition: 
+    - condition: state
+      entity_id: group.woonkamer
+      state: 'on'     
+  action:
+    - service: light.turn_off
+      entity_id: group.woonkamer
+    - service: persistent_notification.create
+      data_template:
+        message: "Lichten woonkamer uitgezet. Trigger: knop Toggle op Tradfri remote control."
+        title: "Lights"
+
+# Zet lichten aan als op Tradfri knop gedrukt -- TOGGLE
+- alias: Lichten woonkamer uit als Tradfri Toggle On
+  trigger:
+    - platform: state
+      entity_id: sensor.tradfri_remote_control
+      to: 'toggle'
+  condition: 
+    - condition: state
+      entity_id: group.woonkamer
+      state: 'off'     
+  action:
+    - service: light.turn_on
+      entity_id: group.woonkamer
+    - service: persistent_notification.create
+      data_template:
+        message: "Lichten woonkamer aangezet. Trigger: knop Toggle op Tradfri remote control."
+        title: "Lights"

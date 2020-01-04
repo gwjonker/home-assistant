@@ -19,7 +19,7 @@
     - service: timer.start
       data:
         entity_id: timer.motion_carport
-        duration: "00:00:30"
+        duration: "00:02:00"
     - service: persistent_notification.create
       data_template:
         message: "Beweging onder carport gedetecteerd."
