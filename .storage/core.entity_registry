@@ -981,6 +981,96 @@
                 "name": "Zolder",
                 "platform": "tuya",
                 "unique_id": "tuya.bfbd31e36530902d120i1w"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "6f2fc0561c0a4c47a4e78bdd9c897f81",
+                "disabled_by": null,
+                "entity_id": "sensor.tradfri_remote_control_battery_level_2",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:0d:6f:ff:fe:16:fa:ec-battery"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "d7772032c19e477abbf696bc9e786ab9",
+                "disabled_by": null,
+                "entity_id": "sensor.motion_woonkamer_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:02:11:3d-battery"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "da1ab16e3a2d4523bf6859968c35417c",
+                "disabled_by": null,
+                "entity_id": "sensor.dimmer_switch_battery_level_2",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:17:88:01:06:73:25:1e-battery"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "5ee489c2f9dd4bf582ceab1d1f4c29ab",
+                "disabled_by": null,
+                "entity_id": "sensor.mi_magic_cube_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:02:9b:f7:09-battery"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "603958cc8a034692a3c21ddd0b372e0b",
+                "disabled_by": null,
+                "entity_id": "sensor.achterdeur_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:21:97:97-battery"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "b43c4256b54342c2ae34a26083cbe6f8",
+                "disabled_by": null,
+                "entity_id": "sensor.motion_overloop_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:15:f0:c9-battery"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "3a602e50ad5b45c6bc55bfed534aa570",
+                "disabled_by": null,
+                "entity_id": "sensor.motion_overkapping_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:2b:d6:42-battery"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "e8c196daf42144c7b6c70fe8eeba28bb",
+                "disabled_by": null,
+                "entity_id": "sensor.poort_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:17:3f:c3-battery"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "1de75eed4a7b47f5812ca586513f5ff6",
+                "disabled_by": null,
+                "entity_id": "sensor.motion_zolder_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:1c:8b:7e-battery"
+            },
+            {
+                "config_entry_id": "1de547cb3c274c778daf8915e66feef1",
+                "device_id": "460e6981ec7d4bc3b785a0516a1cb522",
+                "disabled_by": null,
+                "entity_id": "sensor.voordeur_battery_level",
+                "name": null,
+                "platform": "deconz",
+                "unique_id": "00:15:8d:00:03:21:66:1e-battery"
             }
         ]
     },

@@ -65,8 +65,9 @@
                 "data": {
                     "api_key": "335EE6A6C3",
                     "bridgeid": "00212EFFFF04897B",
-                    "host": "172.30.32.1",
-                    "port": 40850
+                    "host": "172.30.33.0",
+                    "port": 40850,
+                    "uuid": "ac21f830-1d07-47b5-a8d2-794bdfcc64b0"
                 },
                 "domain": "deconz",
                 "entry_id": "1de547cb3c274c778daf8915e66feef1",

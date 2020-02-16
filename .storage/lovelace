@@ -206,6 +206,83 @@
                     "badges": [],
                     "cards": [
                         {
+                            "entities": [
+                                {
+                                    "entity": "sensor.gas_consumption"
+                                },
+                                {
+                                    "entity": "sensor.hourly_gas_consumption"
+                                },
+                                {
+                                    "entity": "sensor.long_power_failure_count"
+                                },
+                                {
+                                    "entity": "sensor.power_consumption"
+                                },
+                                {
+                                    "entity": "sensor.power_consumption_low"
+                                },
+                                {
+                                    "entity": "sensor.power_consumption_normal"
+                                },
+                                {
+                                    "entity": "sensor.power_consumption_total"
+                                },
+                                {
+                                    "entity": "sensor.power_tariff"
+                                },
+                                {
+                                    "entity": "sensor.voltage_phase_l1"
+                                },
+                                {
+                                    "entity": "sensor.voltage_sags_phase_l1"
+                                },
+                                {
+                                    "entity": "sensor.voltage_swells_phase_l1"
+                                },
+                                {
+                                    "entity": "sensor.power_consumption_calc_total"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Slimme meter",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.power_consumption",
+                            "max": 5,
+                            "min": 0,
+                            "name": "Stroomverbruik",
+                            "severity": {
+                                "green": 2,
+                                "red": 4,
+                                "yellow": 3
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.hourly_gas_consumption",
+                            "max": 2.5,
+                            "min": 0,
+                            "name": "Gasverbruik/uur/5m",
+                            "severity": {
+                                "green": 0,
+                                "red": 1.5,
+                                "yellow": 1
+                            },
+                            "theme": "default",
+                            "type": "gauge"
+                        }
+                    ],
+                    "icon": "mdi:gauge",
+                    "path": "slimme-meter",
+                    "title": "Slimme meter"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
                             "entity": "weather.dark_sky",
                             "name": "Dark Sky",
                             "type": "weather-forecast"
@@ -255,25 +332,6 @@
                     ],
                     "icon": "mdi:weather-sunny",
                     "title": "Weer"
-                },
-                {
-                    "badges": [],
-                    "cards": [
-                        {
-                            "entity": "media_player.woonkamer",
-                            "type": "media-control"
-                        },
-                        {
-                            "entity": "media_player.chromecast_jonkertjes",
-                            "type": "media-control"
-                        },
-                        {
-                            "entity": "media_player.play_1",
-                            "type": "media-control"
-                        }
-                    ],
-                    "icon": "mdi:animation-play",
-                    "title": "Media"
                 },
                 {
                     "badges": [],
@@ -449,77 +507,20 @@
                     "badges": [],
                     "cards": [
                         {
-                            "entities": [
-                                {
-                                    "entity": "sensor.gas_consumption"
-                                },
-                                {
-                                    "entity": "sensor.hourly_gas_consumption"
-                                },
-                                {
-                                    "entity": "sensor.long_power_failure_count"
-                                },
-                                {
-                                    "entity": "sensor.power_consumption"
-                                },
-                                {
-                                    "entity": "sensor.power_consumption_low"
-                                },
-                                {
-                                    "entity": "sensor.power_consumption_normal"
-                                },
-                                {
-                                    "entity": "sensor.power_consumption_total"
-                                },
-                                {
-                                    "entity": "sensor.power_tariff"
-                                },
-                                {
-                                    "entity": "sensor.voltage_phase_l1"
-                                },
-                                {
-                                    "entity": "sensor.voltage_sags_phase_l1"
-                                },
-                                {
-                                    "entity": "sensor.voltage_swells_phase_l1"
-                                },
-                                {
-                                    "entity": "sensor.power_consumption_calc_total"
-                                }
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Slimme meter",
-                            "type": "entities"
+                            "entity": "media_player.woonkamer",
+                            "type": "media-control"
                         },
                         {
-                            "entity": "sensor.power_consumption",
-                            "max": 5,
-                            "min": 0,
-                            "name": "Stroomverbruik",
-                            "severity": {
-                                "green": 2,
-                                "red": 4,
-                                "yellow": 3
-                            },
-                            "theme": "default",
-                            "type": "gauge"
+                            "entity": "media_player.chromecast_jonkertjes",
+                            "type": "media-control"
                         },
                         {
-                            "entity": "sensor.hourly_gas_consumption",
-                            "max": 2.5,
-                            "min": 0,
-                            "name": "Gasverbruik/uur/5m",
-                            "severity": {
-                                "green": 0,
-                                "red": 1.5,
-                                "yellow": 1
-                            },
-                            "theme": "default",
-                            "type": "gauge"
+                            "entity": "media_player.play_1",
+                            "type": "media-control"
                         }
                     ],
-                    "path": "slimme-meter",
-                    "title": "Slimme meter"
+                    "icon": "mdi:animation-play",
+                    "title": "Media"
                 }
             ]
         }

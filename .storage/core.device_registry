@@ -215,6 +215,14 @@
                     [
                         "mac",
                         "b8:27:eb:0c:6d:e3"
+                    ],
+                    [
+                        "mac",
+                        "02:42:ac:1e:21:00"
+                    ],
+                    [
+                        "mac",
+                        "02:42:ac:1e:21:07"
                     ]
                 ],
                 "id": "acc02cca3b4942688c8e5b3037754e84",
@@ -228,7 +236,7 @@
                 "model": "deCONZ",
                 "name": "Phoscon-GW",
                 "name_by_user": null,
-                "sw_version": "2.5.66",
+                "sw_version": "2.5.72",
                 "via_device_id": null
             },
             {

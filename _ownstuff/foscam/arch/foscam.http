@@ -1,0 +1,18 @@
+@credentials = usr=gwjonker&pwd=Jonkertjes18
+@uri=http://192.168.2.15:88/cgi-bin/CGIProxy.fcgi?
+@url={{uri}}{{credentials}}&cmd=
+###
+post {{url}}setMotionDetectConfig&isEnable=1
+
+###
+post {{url}}getCloudConfig
+
+###
+GET {{url}}getImageSetting
+
+###
+GET  http://192.168.2.15:88/cgi-bin/CGIProxy.fcgi?{{credentials}}&cmd=getImageSetting
+
+###
+GET  http://192.168.2.15:88/cgi-bin/CGIProxy.fcgi?cmd=getCloudConfig&usr=gwjonker&pwd=Jonkertjes18
+

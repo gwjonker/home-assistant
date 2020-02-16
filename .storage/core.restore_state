@@ -1,31 +1,101 @@
 {
     "data": [
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "Verbruik wasmachine eind",
-                    "icon": "mdi:current-ac",
-                    "initial": null,
-                    "max": 1000.0,
-                    "min": 0.0,
-                    "mode": "slider",
-                    "step": 1.0,
-                    "unit_of_measurement": "kWh"
+                    "friendly_name": "Draait de droger",
+                    "icon": "mdi:tumble-dryer"
                 },
                 "context": {
-                    "id": "1a5c4ffafe2b48f9ad09e254e8b7e685",
+                    "id": "f3ae657401884adf9d4b9c1ced3ff0d6",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "input_number.washing_machine_consumption_end",
-                "last_changed": "2019-12-04T04:02:08.402088+00:00",
-                "last_updated": "2019-12-04T04:02:08.402088+00:00",
-                "state": "103.29"
+                "entity_id": "input_boolean.dryer_on",
+                "last_changed": "2020-02-16T04:04:28.020701+00:00",
+                "last_updated": "2020-02-16T04:04:28.020701+00:00",
+                "state": "off"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Jonkertjes slapen",
+                    "icon": "mdi:sleep"
+                },
+                "context": {
+                    "id": "8a147303a2794ca8a4809934ed7586b8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.sleeping",
+                "last_changed": "2020-02-16T05:55:00.057318+00:00",
+                "last_updated": "2020-02-16T05:55:00.057318+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Draait de wasmachine",
+                    "icon": "mdi:washing-machine"
+                },
+                "context": {
+                    "id": "2f33e61f981845baa2d88a7e1f2e2523",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.washing_machine_on",
+                "last_changed": "2020-02-16T04:04:28.024646+00:00",
+                "last_updated": "2020-02-16T04:04:28.024646+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Melden beweging carport",
+                    "icon": "mdi:motion-sensor"
+                },
+                "context": {
+                    "id": "a0439e5419454d50972f4ccc6010b941",
+                    "parent_id": "25638838d096405d820f5a97d0965d32",
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.motion_carport_on",
+                "last_changed": "2020-02-16T14:19:06.143092+00:00",
+                "last_updated": "2020-02-16T14:19:06.143092+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Testselector",
+                    "options": [
+                        "Start",
+                        "Stop",
+                        "Pause"
+                    ]
+                },
+                "context": {
+                    "id": "d524d03a5a6045a1b843e8dc3097de65",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_select.test",
+                "last_changed": "2020-02-16T04:04:28.031826+00:00",
+                "last_updated": "2020-02-16T04:04:28.031826+00:00",
+                "state": "Stop"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Verbruik wasmachine start",
@@ -38,131 +108,61 @@
                     "unit_of_measurement": "kWh"
                 },
                 "context": {
-                    "id": "b3fd83e7d9d7419c8ec774d9a6ba05e5",
+                    "id": "3900d7438057416cb0ff96943159b43f",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_number.washing_machine_consumption_start",
-                "last_changed": "2019-12-04T04:02:08.407904+00:00",
-                "last_updated": "2019-12-04T04:02:08.407904+00:00",
-                "state": "102.45"
+                "last_changed": "2020-02-16T04:04:28.040673+00:00",
+                "last_updated": "2020-02-16T04:04:28.040673+00:00",
+                "state": "144.26"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
-                    "duration": "0:00:30",
+                    "friendly_name": "Verbruik wasmachine eind",
+                    "icon": "mdi:current-ac",
+                    "initial": null,
+                    "max": 1000.0,
+                    "min": 0.0,
+                    "mode": "slider",
+                    "step": 1.0,
+                    "unit_of_measurement": "kWh"
+                },
+                "context": {
+                    "id": "6c6f2aa0a9f4447ba2e02b60853ab468",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.washing_machine_consumption_end",
+                "last_changed": "2020-02-16T04:04:28.044556+00:00",
+                "last_updated": "2020-02-16T04:04:28.044556+00:00",
+                "state": "146.0"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "duration": "0:02:00",
                     "friendly_name": "Duur gedetecteerde beweging carport",
                     "remaining": "0:00:00"
                 },
                 "context": {
-                    "id": "09184ab6b7c8465d916d5385dc06bc15",
+                    "id": "9e873bead79b4cbf836216a22743de40",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "timer.motion_carport",
-                "last_changed": "2019-12-04T20:52:23.017643+00:00",
-                "last_updated": "2019-12-04T20:52:23.017643+00:00",
+                "last_changed": "2020-02-16T14:19:06.012585+00:00",
+                "last_updated": "2020-02-16T14:19:06.012585+00:00",
                 "state": "idle"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Draait de wasmachine",
-                    "icon": "mdi:washing-machine"
-                },
-                "context": {
-                    "id": "c26ca6c541be4916916b49e9a6dc8d4f",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.washing_machine_on",
-                "last_changed": "2019-12-04T04:02:08.414772+00:00",
-                "last_updated": "2019-12-04T04:02:08.414772+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Melden beweging carport",
-                    "icon": "mdi:motion-sensor"
-                },
-                "context": {
-                    "id": "827598cab8a14d87997f1211fdf149a9",
-                    "parent_id": "8f23de0f9173484da463da1a4ac0e035",
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.motion_carport_on",
-                "last_changed": "2019-12-04T20:52:23.110161+00:00",
-                "last_updated": "2019-12-04T20:52:23.110161+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Draait de droger",
-                    "icon": "mdi:tumble-dryer"
-                },
-                "context": {
-                    "id": "ca6b9e2f50034adbbcbc0c6cfb25d493",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.dryer_on",
-                "last_changed": "2019-12-04T04:02:08.425128+00:00",
-                "last_updated": "2019-12-04T04:02:08.425128+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Jonkertjes slapen",
-                    "icon": "mdi:sleep"
-                },
-                "context": {
-                    "id": "f3eef53220d9413db52722978195a0dd",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.sleeping",
-                "last_changed": "2019-12-04T05:55:00.038420+00:00",
-                "last_updated": "2019-12-04T05:55:00.038420+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Testselector",
-                    "options": [
-                        "Start",
-                        "Stop",
-                        "Pause"
-                    ]
-                },
-                "context": {
-                    "id": "4b2ac18a19644046bfa9e29fccb94738",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_select.test",
-                "last_changed": "2019-12-04T04:02:08.439373+00:00",
-                "last_updated": "2019-12-04T04:02:08.439373+00:00",
-                "state": "Stop"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "editable": true,
@@ -171,427 +171,535 @@
                     "user_id": "7ce4f82eb4de4d4dbd64af06b8dea5e6"
                 },
                 "context": {
-                    "id": "c3b639cfccb74a11be7ec74e747ecc88",
+                    "id": "88f7612d71c34a11b087b5c0e809d03b",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "person.gerwin_jonker",
-                "last_changed": "2019-12-04T04:02:08.450799+00:00",
-                "last_updated": "2019-12-04T04:02:20.947247+00:00",
+                "last_changed": "2020-02-16T04:04:28.052392+00:00",
+                "last_updated": "2020-02-16T04:04:59.459765+00:00",
                 "state": "unknown"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Droger is klaar",
-                    "last_triggered": "2019-12-01T20:09:58.233154+00:00"
-                },
-                "context": {
-                    "id": "05be37edda8248d89e521c335766f451",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.droger_is_klaar",
-                "last_changed": "2019-12-04T04:02:12.637795+00:00",
-                "last_updated": "2019-12-04T04:02:12.637795+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Z-Wave network is starting",
-                    "last_triggered": "2019-12-04T04:02:22.090189+00:00"
-                },
-                "context": {
-                    "id": "7ccec70c8a284a5abb820b7fdfd91d1e",
-                    "parent_id": "b24a3544a264416fb3dd55b30af220f8",
-                    "user_id": null
-                },
-                "entity_id": "automation.z_wave_network_is_starting",
-                "last_changed": "2019-12-04T04:02:12.668242+00:00",
-                "last_updated": "2019-12-04T04:02:22.097087+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Z-Wave network is ready",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "18ce5b1a36014d86a0dc11d0888443e7",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.z_wave_network_is_ready",
-                "last_changed": "2019-12-04T04:02:12.671029+00:00",
-                "last_updated": "2019-12-04T04:02:12.671029+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Daily partial snapshot backup",
-                    "last_triggered": "2019-12-04T02:05:10.228063+00:00"
-                },
-                "context": {
-                    "id": "29cd99074c8e447e8f3c628906cff5fe",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.daily_partial_snapshot_backup",
-                "last_changed": "2019-12-04T04:02:12.715062+00:00",
-                "last_updated": "2019-12-04T04:02:12.715062+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Cleanup backup-folder and carportcam shots",
-                    "last_triggered": "2019-12-04T03:00:02.427335+00:00"
-                },
-                "context": {
-                    "id": "5780d209237a46d98900a3a0703bea92",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.cleanup_backup_folder_and_carportcam_shots",
-                "last_changed": "2019-12-04T04:02:12.718250+00:00",
-                "last_updated": "2019-12-04T04:02:12.718250+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Copy backup folder to Dropbox",
-                    "last_triggered": "2019-12-04T03:30:00.359445+00:00"
-                },
-                "context": {
-                    "id": "d4dee7dacc194eb890560558ec9fc86a",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.copy_backup_folder_to_dropbox",
-                "last_changed": "2019-12-04T04:02:12.742986+00:00",
-                "last_updated": "2019-12-04T04:02:12.742986+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Forward persistent notifications",
-                    "last_triggered": "2019-12-04T20:51:53.159242+00:00"
-                },
-                "context": {
-                    "id": "14c1440107b2468aa1cc60a70eb83197",
-                    "parent_id": "bff7ad20d5c44c5588d09b7b6081a678",
-                    "user_id": null
-                },
-                "entity_id": "automation.forward_persistent_notifications",
-                "last_changed": "2019-12-04T04:02:12.748462+00:00",
-                "last_updated": "2019-12-04T20:51:53.160352+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Restart Home Assistant every night so presence detection via ping keeps working",
-                    "last_triggered": "2019-12-04T04:00:00.170302+00:00"
-                },
-                "context": {
-                    "id": "7b62dc1307b04bf29b783a5e35b8cf4d",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.restart_home_assistant_every_night_so_presence_detection_via_ping_keeps_working",
-                "last_changed": "2019-12-04T04:02:12.753433+00:00",
-                "last_updated": "2019-12-04T04:02:12.753433+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Warning if disk use above 60%",
-                    "last_triggered": "2019-11-19T21:57:38.411916+00:00"
-                },
-                "context": {
-                    "id": "400d959cbf3b4faa961c7a1bc54d9d79",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.warning_if_disk_use_above_60",
-                "last_changed": "2019-12-04T04:02:12.809402+00:00",
-                "last_updated": "2019-12-04T04:02:12.809402+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Dim overlooplicht als aangezet",
-                    "last_triggered": "2019-12-04T19:39:35.353077+00:00"
+                    "last_triggered": "2020-02-16T04:05:08.650877+00:00"
                 },
                 "context": {
-                    "id": "ce6fbeee0397495b8e86671e41ef8e50",
-                    "parent_id": "09d24287c6244ef09e0f35820ad642b7",
+                    "id": "3b55d39a71fd41f19fae4b4dde10ba5f",
+                    "parent_id": "7439d91f954d4e7d88dbad2b06dd7953",
                     "user_id": null
                 },
                 "entity_id": "automation.dim_overlooplicht_als_aangezet",
-                "last_changed": "2019-12-04T04:02:12.812809+00:00",
-                "last_updated": "2019-12-04T19:39:35.355939+00:00",
+                "last_changed": "2020-02-16T04:04:50.881951+00:00",
+                "last_updated": "2020-02-16T04:05:08.652154+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Dim overlooplicht als aangezet",
-                    "last_triggered": "2019-12-04T04:02:29.702849+00:00"
-                },
-                "context": {
-                    "id": "0bce4326841b46b7aef9fe2a4a5255b4",
-                    "parent_id": "39242d789111452fa9935f0cc0698d22",
-                    "user_id": null
-                },
-                "entity_id": "automation.dim_overlooplicht_als_aangezet_2",
-                "last_changed": "2019-12-04T04:02:12.822270+00:00",
-                "last_updated": "2019-12-04T04:02:29.704154+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Zet indicatie Jonkertjes slapen 's morgens uit",
-                    "last_triggered": "2019-12-04T05:55:00.180117+00:00"
+                    "last_triggered": "2020-02-16T05:55:00.246677+00:00"
                 },
                 "context": {
-                    "id": "f3eef53220d9413db52722978195a0dd",
+                    "id": "8a147303a2794ca8a4809934ed7586b8",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.zet_indicatie_jonkertjes_slapen_s_morgens_uit",
-                "last_changed": "2019-12-04T04:02:12.831697+00:00",
-                "last_updated": "2019-12-04T05:55:00.182252+00:00",
+                "last_changed": "2020-02-16T04:04:50.886327+00:00",
+                "last_updated": "2020-02-16T05:55:00.250788+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Zet lichten uit als indicatie Jonkertjes slapen van off naar on",
-                    "last_triggered": "2019-12-03T22:42:02.391599+00:00"
+                    "last_triggered": "2020-02-15T23:27:13.767605+00:00"
                 },
                 "context": {
-                    "id": "bb5efb1a01dd47c294fb246af4d173dd",
+                    "id": "b04bc05f54a54eddabee97fc0d5408b0",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.zet_lichten_uit_als_indicatie_jonkertjes_slapen_van_off_naar_on",
-                "last_changed": "2019-12-04T04:02:12.835080+00:00",
-                "last_updated": "2019-12-04T04:02:12.835080+00:00",
+                "last_changed": "2020-02-16T04:04:50.890129+00:00",
+                "last_updated": "2020-02-16T04:04:50.890129+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Scene conversatie als donker EN beweging in woonkamer",
-                    "last_triggered": "2019-12-04T14:57:52.060064+00:00"
+                    "last_triggered": "2020-02-16T07:04:40.279594+00:00"
                 },
                 "context": {
-                    "id": "ca31a0f6fd01470bbf6f6890d1b9c7fa",
-                    "parent_id": "d54cd44d5351482dbd9a96a287de89b2",
+                    "id": "030b7fbc3f374128a8de4dd2bc61e3d6",
+                    "parent_id": "a2a4b883f8484735b88e90b3d49af424",
                     "user_id": null
                 },
                 "entity_id": "automation.scene_conversatie_als_donker_en_beweging_in_woonkamer",
-                "last_changed": "2019-12-04T04:02:12.860172+00:00",
-                "last_updated": "2019-12-04T14:57:52.064050+00:00",
+                "last_changed": "2020-02-16T04:04:50.893783+00:00",
+                "last_updated": "2020-02-16T07:04:40.296585+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Zet lichten uit als licht genoeg in de woonkamer",
-                    "last_triggered": "2019-12-04T14:47:39.771931+00:00"
+                    "last_triggered": "2020-02-15T08:21:40.355037+00:00"
                 },
                 "context": {
-                    "id": "c118466616e9422eb28419d7c4181300",
-                    "parent_id": "72d227cd9a8843ac92c48d7090bd583c",
+                    "id": "0c2ec047fe5b40a28af9722906bb3020",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.zet_lichten_uit_als_licht_genoeg_in_de_woonkamer",
-                "last_changed": "2019-12-04T04:02:12.863849+00:00",
-                "last_updated": "2019-12-04T14:47:39.773460+00:00",
+                "last_changed": "2020-02-16T04:04:50.897626+00:00",
+                "last_updated": "2020-02-16T04:04:50.897626+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Activeer scene Film als Tradfri Down",
+                    "last_triggered": "2020-01-24T11:18:01.607730+00:00"
+                },
+                "context": {
+                    "id": "37398beed8704027982c6b8c93c7419c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.activeer_scene_film_als_tradfri_down",
+                "last_changed": "2020-02-16T04:04:50.900943+00:00",
+                "last_updated": "2020-02-16T04:04:50.900943+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Activeer scene Film als Tradfri Up",
+                    "last_triggered": "2020-02-13T08:31:42.343834+00:00"
+                },
+                "context": {
+                    "id": "2c04fcb0e1d049fa8722891b8d405884",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.activeer_scene_film_als_tradfri_up",
+                "last_changed": "2020-02-16T04:04:50.905215+00:00",
+                "last_updated": "2020-02-16T04:04:50.905215+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Activeer scene Film als Tradfri Next",
+                    "last_triggered": "2020-01-24T07:53:50.666717+00:00"
+                },
+                "context": {
+                    "id": "305ae703aaee4ee49799661c5c85d3bc",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.activeer_scene_film_als_tradfri_next",
+                "last_changed": "2020-02-16T04:04:50.909113+00:00",
+                "last_updated": "2020-02-16T04:04:50.909113+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Activeer scene Film als Tradfri Previous",
+                    "last_triggered": "2020-01-24T07:26:40.954178+00:00"
+                },
+                "context": {
+                    "id": "7291c2323de64829a627d4e4469e054e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.activeer_scene_film_als_tradfri_previous",
+                "last_changed": "2020-02-16T04:04:50.914384+00:00",
+                "last_updated": "2020-02-16T04:04:50.914384+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Lichten woonkamer uit als Tradfri Toggle Off",
+                    "last_triggered": "2020-02-16T08:00:15.558365+00:00"
+                },
+                "context": {
+                    "id": "629dccdf262c4b14aba45143c0a7c0de",
+                    "parent_id": "78a86e7030d245c5969add3993ad4b46",
+                    "user_id": null
+                },
+                "entity_id": "automation.lichten_woonkamer_uit_als_tradfri_toggle_off",
+                "last_changed": "2020-02-16T04:04:50.918079+00:00",
+                "last_updated": "2020-02-16T08:00:15.560581+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Lichten woonkamer uit als Tradfri Toggle On",
+                    "last_triggered": "2020-02-06T06:59:26.117717+00:00"
+                },
+                "context": {
+                    "id": "d0fa1653db2d4e89abef8e6690edd354",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.lichten_woonkamer_uit_als_tradfri_toggle_on",
+                "last_changed": "2020-02-16T04:04:50.928272+00:00",
+                "last_updated": "2020-02-16T04:04:50.928272+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Carport motion detected",
-                    "last_triggered": "2019-12-04T20:51:52.631746+00:00"
+                    "last_triggered": "2020-02-16T14:17:05.290534+00:00"
                 },
                 "context": {
-                    "id": "bff7ad20d5c44c5588d09b7b6081a678",
-                    "parent_id": "fe2c5500a3da4f5d97eee234d34c390a",
+                    "id": "a1c92a22ce894c58b5a62550992bcb86",
+                    "parent_id": "2a85cfccde404808b5926c85c29c94ca",
                     "user_id": null
                 },
                 "entity_id": "automation.carport_motion_detected",
-                "last_changed": "2019-12-04T04:02:12.879138+00:00",
-                "last_updated": "2019-12-04T20:51:52.633751+00:00",
+                "last_changed": "2020-02-16T04:04:50.951150+00:00",
+                "last_updated": "2020-02-16T14:17:05.291793+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Carport motion detected ended",
-                    "last_triggered": "2019-12-04T20:52:23.132926+00:00"
+                    "last_triggered": "2020-02-16T14:19:06.157676+00:00"
                 },
                 "context": {
-                    "id": "827598cab8a14d87997f1211fdf149a9",
-                    "parent_id": "8f23de0f9173484da463da1a4ac0e035",
+                    "id": "a0439e5419454d50972f4ccc6010b941",
+                    "parent_id": "25638838d096405d820f5a97d0965d32",
                     "user_id": null
                 },
                 "entity_id": "automation.carport_motion_detected_ended",
-                "last_changed": "2019-12-04T04:02:12.913364+00:00",
-                "last_updated": "2019-12-04T20:52:23.134573+00:00",
+                "last_changed": "2020-02-16T04:04:50.954291+00:00",
+                "last_updated": "2020-02-16T14:19:06.158947+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "High download speed for 1 minute",
-                    "last_triggered": "2019-12-04T13:40:49.150571+00:00"
+                    "last_triggered": "2019-12-11T15:38:34.194117+00:00"
                 },
                 "context": {
-                    "id": "4646b08b8e78473d8c5b956ca8e180b8",
-                    "parent_id": "c212dff6c665452b8299603097b45928",
+                    "id": "ec3a38fe440b447a8b20a7804f22ef87",
+                    "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.high_download_speed_for_1_minute",
-                "last_changed": "2019-12-04T04:02:12.949715+00:00",
-                "last_updated": "2019-12-04T13:40:49.152297+00:00",
+                "last_changed": "2020-02-16T04:04:50.965356+00:00",
+                "last_updated": "2020-02-16T04:04:50.965356+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "High upload speed for 1 minute",
-                    "last_triggered": "2019-12-01T15:39:32.177142+00:00"
+                    "last_triggered": "2019-12-08T19:15:18.542569+00:00"
                 },
                 "context": {
-                    "id": "7f663c2590ba4042a43468a80cc8130d",
+                    "id": "a34ca9a25a754f4f9feb5d5306e4b76d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.high_upload_speed_for_1_minute",
-                "last_changed": "2019-12-04T04:02:12.981770+00:00",
-                "last_updated": "2019-12-04T04:02:12.981770+00:00",
+                "last_changed": "2020-02-16T04:04:50.968260+00:00",
+                "last_updated": "2020-02-16T04:04:50.968260+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "test_an_automation",
                     "last_triggered": "2019-11-19T21:20:25.843300+00:00"
                 },
                 "context": {
-                    "id": "cf48b4e1273b4a64ba0d321eee90bab1",
+                    "id": "fa576abdab8748d2aecb239ad1b4d67b",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.test_an_automation",
-                "last_changed": "2019-12-04T04:02:12.991808+00:00",
-                "last_updated": "2019-12-04T04:02:12.991808+00:00",
+                "last_changed": "2020-02-16T04:04:50.980962+00:00",
+                "last_updated": "2020-02-16T04:04:50.980962+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Wasmachine draait",
-                    "last_triggered": "2019-12-01T13:23:55.790964+00:00"
+                    "last_triggered": "2020-02-15T12:00:10.838300+00:00"
                 },
                 "context": {
-                    "id": "24b361a0c15f42f8b892520d71b784fd",
+                    "id": "88fe6bc640424723acdb6332c4733a67",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.wasmachine_draait",
-                "last_changed": "2019-12-04T04:02:12.995065+00:00",
-                "last_updated": "2019-12-04T04:02:12.995065+00:00",
+                "last_changed": "2020-02-16T04:04:50.984184+00:00",
+                "last_updated": "2020-02-16T04:04:50.984184+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Wasmachine is klaar",
-                    "last_triggered": "2019-12-01T14:48:38.193201+00:00"
+                    "last_triggered": "2020-02-15T14:01:09.194540+00:00"
                 },
                 "context": {
-                    "id": "dbdc1c4637d642609c11693aa6040a33",
+                    "id": "fe688d46efbd4aba8155c34336094c3a",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.wasmachine_is_klaar",
-                "last_changed": "2019-12-04T04:02:13.043360+00:00",
-                "last_updated": "2019-12-04T04:02:13.043360+00:00",
+                "last_changed": "2020-02-16T04:04:50.988198+00:00",
+                "last_updated": "2020-02-16T04:04:50.988198+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-12-04T21:03:28.014213+00:00",
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Droger draait",
-                    "last_triggered": "2019-12-01T17:34:04.755946+00:00"
+                    "last_triggered": "2020-02-15T14:19:38.075659+00:00"
                 },
                 "context": {
-                    "id": "c0a7b5a980e8423e997de831c9b06e83",
+                    "id": "b0be3207e52a4f15bd235418ff36d7a8",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.droger_draait",
-                "last_changed": "2019-12-04T04:02:13.058469+00:00",
-                "last_updated": "2019-12-04T04:02:13.058469+00:00",
+                "last_changed": "2020-02-16T04:04:50.990754+00:00",
+                "last_updated": "2020-02-16T04:04:50.990754+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Droger is klaar",
+                    "last_triggered": "2020-02-15T17:10:04.160214+00:00"
+                },
+                "context": {
+                    "id": "0ec527e1ec0144b1b13a8d9dd1debd24",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.droger_is_klaar",
+                "last_changed": "2020-02-16T04:04:50.993100+00:00",
+                "last_updated": "2020-02-16T04:04:50.993100+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Z-Wave network is starting",
+                    "last_triggered": "2020-02-16T04:05:03.750001+00:00"
+                },
+                "context": {
+                    "id": "fe8462628288443194f7d9d8492bcf74",
+                    "parent_id": "87c885009eec4e668cc07152bde1e5b2",
+                    "user_id": null
+                },
+                "entity_id": "automation.z_wave_network_is_starting",
+                "last_changed": "2020-02-16T04:04:50.995951+00:00",
+                "last_updated": "2020-02-16T04:05:03.751379+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Daily partial snapshot backup",
+                    "last_triggered": "2020-02-16T02:05:10.138701+00:00"
+                },
+                "context": {
+                    "id": "fab91c73c5e24ec0bccc74733a6e5200",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.daily_partial_snapshot_backup",
+                "last_changed": "2020-02-16T04:04:51.003427+00:00",
+                "last_updated": "2020-02-16T04:04:51.003427+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Z-Wave network is ready",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "d24bbadbcd494b028a4a2bebede4f6a9",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.z_wave_network_is_ready",
+                "last_changed": "2020-02-16T04:04:51.006167+00:00",
+                "last_updated": "2020-02-16T04:04:51.006167+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Cleanup backup-folder and carportcam shots",
+                    "last_triggered": "2020-02-16T03:00:17.038724+00:00"
+                },
+                "context": {
+                    "id": "9dffb4f76cbc4c1fb6ef09fd8d670ca0",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.cleanup_backup_folder_and_carportcam_shots",
+                "last_changed": "2020-02-16T04:04:51.008945+00:00",
+                "last_updated": "2020-02-16T04:04:51.008945+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Copy backup folder to Dropbox",
+                    "last_triggered": "2020-02-16T03:30:05.622738+00:00"
+                },
+                "context": {
+                    "id": "42421eaef79f441caf68d3eff40f6f6a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.copy_backup_folder_to_dropbox",
+                "last_changed": "2020-02-16T04:04:51.012711+00:00",
+                "last_updated": "2020-02-16T04:04:51.012711+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Forward persistent notifications",
+                    "last_triggered": "2020-02-16T14:33:00.606925+00:00"
+                },
+                "context": {
+                    "id": "16d79651b9bc4536ab3ab2b5b68b8ab0",
+                    "parent_id": "bdf4209e3401406f91b1e411a860fabd",
+                    "user_id": null
+                },
+                "entity_id": "automation.forward_persistent_notifications",
+                "last_changed": "2020-02-16T04:04:51.016084+00:00",
+                "last_updated": "2020-02-16T14:33:00.607951+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Restart Home Assistant every night so presence detection via ping keeps working",
+                    "last_triggered": "2020-02-16T04:00:00.191545+00:00"
+                },
+                "context": {
+                    "id": "69400c9c117c4cdca8c200d57ee5843b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.restart_home_assistant_every_night_so_presence_detection_via_ping_keeps_working",
+                "last_changed": "2020-02-16T04:04:51.020944+00:00",
+                "last_updated": "2020-02-16T04:04:51.020944+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Warning if disk use above 60%",
+                    "last_triggered": "2020-02-16T04:05:27.685003+00:00"
+                },
+                "context": {
+                    "id": "00d6996faa0e4232980ff56b8311aab4",
+                    "parent_id": "3de1c1a937c9437bbc6b1746ace74fab",
+                    "user_id": null
+                },
+                "entity_id": "automation.warning_if_disk_use_above_60",
+                "last_changed": "2020-02-16T04:04:51.023578+00:00",
+                "last_updated": "2020-02-16T04:05:27.686873+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-02-16T15:21:11.012293+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Dim overlooplicht als aangezet",
+                    "last_triggered": "2020-02-15T04:04:08.509070+00:00"
+                },
+                "context": {
+                    "id": "66bb28153eed4c43816903ec3c361ceb",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.dim_overlooplicht_als_aangezet_2",
+                "last_changed": "2020-02-16T04:04:51.028236+00:00",
+                "last_updated": "2020-02-16T04:04:51.028236+00:00",
                 "state": "on"
             }
         }

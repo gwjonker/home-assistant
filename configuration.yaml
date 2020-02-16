@@ -50,6 +50,12 @@ camera:
     username: !secret camera_carport_username
     password: !secret camera_carport_password
 
+  - platform: generic
+    name: Grafana
+    still_image_url: 'https://jonkertjes.duckdns.org:8123/api/hassio_ingress/hBuyU1kcPxCyEmf1adMktJEEp9UjZRcicop8DS9lEEw/d/L1X2KmkRz/energie-per-uur?orgId=1&refresh=5s&from=1577195250982&to=1577368050982'
+    username: !secret grafana_user
+    password: !secret grafana_pass
+
 # Routers
 asuswrt:
   host: !secret asusrouter_host
